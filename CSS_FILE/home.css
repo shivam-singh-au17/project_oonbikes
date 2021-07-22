@@ -1,0 +1,1806 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bike-details>p:nth-child(3),
+.bike-details>p:nth-child(4),
+.bike-details>p:nth-child(5) {
+    font-weight: 600 !important;
+}
+
+.bike-details>p:nth-child(3)>span,
+.bike-details>p:nth-child(4)>span,
+.bike-details>p:nth-child(5)>span {
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-size: 50%;
+    background-color: rgb(223, 223, 223);
+}
+
+
+/* All the header CSS written here */
+
+.header_div {
+    width: 100%;
+    height: 62rem;
+    position: relative;
+}
+
+.img_slideshow {
+    width: 100%;
+    height: 100%;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 100px 50px 1px rgb(0 0 0 / 30%) inset;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Navigation bar CSS as we are static on page at first. The CSS changes for navigation 
+as we scroll doen and that CSS is written down in different style. */
+
+.navigation_bar {
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    position: fixed;
+    z-index: 5;
+}
+
+.navigation_bar>ul {
+    font-size: 1.1rem;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation_bar>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation_bar>ul>li>a:hover {
+    color: rgb(238, 127, 34);
+}
+
+.navigation_bar>ul>li>a>img {
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+.spacing_in_line {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* As you scroll down the navigation bar property changes to the below mentioned styles */
+
+.scrollingNavigation {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 10;
+    position: fixed;
+    top: -72px;
+    transform: translateY(70px);
+    transition: transform 500ms ease, background 900ms ease;
+    -webkit-transition: transform 500ms ease, background 900ms ease;
+}
+
+.scrollingNavigation img {
+    width: 5rem;
+    box-shadow: rgba(169, 169, 182, 0.25) 0px 0px 2px 2px;
+}
+
+.scrollingNavigation a {
+    color: rgb(30, 45, 81) !important;
+}
+
+.scrollingNavigation a:hover {
+    color: rgb(238, 127, 34) !important;
+}
+
+
+/* CSS Property for the Tag line mentioned here. Tagline keeps changing with the sliding image  */
+
+.tagLine {
+    margin: auto;
+    text-align: center;
+    margin-top: 26rem;
+    line-height: 5.2rem;
+    color: white;
+    text-shadow: 1px 1px 20px #000000;
+    width: 100rem;
+    margin-bottom: 1.3rem;
+}
+
+.tagLine>h1 {
+    font-size: 5.5rem !important;
+    font-weight: 700 !important;
+}
+
+.tagLine>h3 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}
+
+
+/* CSS for the ride now Div box inside the image of the header  */
+
+.rideNow {
+    width: 102rem;
+    margin: auto;
+    height: 5.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rideNow>div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    float: left;
+    font-size: 1.6rem;
+    border-right: 0.2px solid rgba(214, 211, 211, 0.151);
+}
+
+.rideNow>div>p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide_btn-rideNow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide_content-rideNow {
+    background-color: white;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+.hide_content-rideNow>p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.hide_btn-rideNow.active+.hide_content-rideNow {
+    height: auto;
+}
+
+.hide_content-rideNow>p:hover {
+    background: rgb(30, 45, 81);
+    color: white;
+}
+
+.rideNow button {
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    background-color: rgb(30, 45, 81);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.rideNowcityCont {
+    cursor: pointer;
+}
+
+.rideNowcityCont a {
+    border: 1px solid rgba(255, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* main_content section css starts form here */
+
+.main_content {
+    background-color: white;
+    width: 100%;
+}
+
+.whyONN,
+.app_link,
+.featuredOn,
+.contactUs,
+.FAQs_section {
+    border: 1px solid rgba(238, 20, 20, 0);
+    width: 130rem;
+    margin: auto;
+}
+
+.app_link {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4.5rem;
+}
+
+.app_link>div>h2,
+.whyONN>h2,
+.featuredOn>h2,
+.FAQs_section>h2,
+.contactUs>h2 {
+    font-size: 3.4rem;
+    color: rgb(88, 88, 88);
+    font-weight: 500;
+    text-align: center;
+}
+
+.whyONN>h2+p,
+.featuredOn>h2+p,
+.FAQs_section>h2+p,
+.contactUs>h2+p {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.featuredOn img {
+    cursor: pointer;
+}
+
+
+/* why onn section */
+
+.whyONN,
+.featuredOn,
+.contactUs {
+    margin-top: 6rem;
+}
+
+.whyONN>.whyONN_advantages {
+    width: 95%;
+    margin: auto;
+}
+
+.whyONN_advantages>div {
+    box-shadow: 0 0 5px #d2d2d2;
+    text-align: center;
+    padding: 1.5rem 0.8rem;
+    margin: 3rem 0;
+    height: 37rem;
+    width: 22%;
+    /* border: 1px solid lime; */
+}
+
+.whyONN_advantages>div>img {
+    width: 9rem;
+}
+
+.whyONN_advantages>div>.big_img {
+    width: 6rem !important;
+}
+
+.whyONN .whyONN_advantage_tagLine {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.7rem;
+}
+
+.whyONN .whyONN_advantage_tagLine_content {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #353854;
+    line-height: 2.8rem;
+}
+
+.whyONN_advantages>.ONN_Stations>.whyONN_advantage_tagLine {
+    margin-top: 3rem;
+}
+
+
+/* .featuredOn css starts form here */
+
+.featuredOn>.featuredOn_img,
+.FAQs_section>.FAQ_ques_section {
+    width: 80%;
+    margin: auto;
+}
+
+.featuredOn>.featuredOn_img>div>img {
+    width: 15rem;
+    padding-top: 2rem;
+}
+
+
+/* contact us form css starts form here */
+
+.contactUs_parts {
+    width: 85%;
+    margin: auto;
+}
+
+.contactUs_leftContent,
+.contactUs_rightContent {
+    width: 48.5%;
+    margin-top: 2.6rem;
+}
+
+.firstName_lastName>div {
+    width: 49%;
+    display: flex;
+    position: relative;
+}
+
+.form span {
+    height: 2.8rem;
+    width: 4rem;
+    border-right: 1px dotted rgba(102, 101, 101, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: rgb(187, 178, 178);
+    position: absolute;
+    left: 0;
+    margin-top: 1.2rem;
+    z-index: 1;
+}
+
+.firstName_lastName input {
+    width: 84.5%;
+    height: 4rem;
+    border: 1px solid rgb(221, 220, 220);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.form>div {
+    display: flex;
+    position: relative;
+}
+
+.form input,
+.form button,
+.form textarea,
+.form select {
+    width: 100%;
+    margin: 0.3rem 0;
+    height: 4rem;
+    border: 1px solid rgb(221, 220, 220);
+    padding: 1rem;
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    position: relative;
+    transition: 0.2s;
+}
+
+.form textarea {
+    height: 6rem;
+}
+
+.firstName_lastName>input:focus,
+.form input:focus,
+.form button:focus,
+.form textarea:focus,
+.form select:focus {
+    outline: none;
+    box-shadow: rgba(7, 7, 7, 0.247) 2px 2px 10px;
+    transition: 0.2s;
+}
+
+::placeholder {
+    color: rgb(182, 172, 172);
+    opacity: 1;
+}
+
+.contactUs_leftContent>.form #submit_contactUs {
+    background-color: rgb(30, 45, 81);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 99.5%;
+    border-radius: 0.3rem;
+    font-weight: 500;
+}
+
+
+/* CSS for the Form that lies in contact us section and the left div of the contact us lies here */
+
+.form_accordian_Container {
+    position: relative;
+}
+
+.form_collapsing_container>.hide_btn-form {
+    background-color: white;
+    text-align: start;
+    height: 4.5rem;
+    position: relative;
+    color: gray;
+}
+
+.hide_content-form {
+    position: absolute;
+    top: 4.8rem;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 2;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+}
+
+.hide_btn-form.active+.hide_content-form {
+    height: auto;
+}
+
+.hide_content-form>div {
+    padding: 1.2rem 1rem;
+    font-size: 1.4rem;
+    color: rgb(30, 45, 81);
+    cursor: pointer;
+}
+
+.hide_content-form>div:hover {
+    background-color: rgb(30, 45, 81);
+    color: white;
+}
+
+
+/* CSS for the drop down accordian in the right of contact us lies here */
+
+.contactUs_rightContent {
+    margin-bottom: 4rem;
+}
+
+.contactUs_rightContent button {
+    width: 100%;
+}
+
+.contactUs_rightContent button {
+    height: 5.2rem;
+    background-color: white;
+    color: rgb(30, 45, 81);
+    border: 1px solid rgb(221, 220, 220);
+    outline: none;
+    font-size: 1.3rem;
+    text-align: start;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    transition: 0.2s;
+    position: relative;
+    font-weight: 500;
+    border-bottom: none;
+}
+
+.contactUs_rightContent button::after,
+.collapsible_content::after,
+.form_collapsing_container>.hide_btn-form::after {
+    content: "\25be";
+    position: absolute;
+    right: 2%;
+    transform: scale(1.7);
+}
+
+.collapsible_content,
+.form_accordian {
+    position: relative;
+    cursor: pointer;
+}
+
+.contactUs_rightContent button:hover {
+    background-color: rgb(30, 45, 81);
+    color: white;
+    transition: 0.2s;
+}
+
+.contactUs_rightContent .hide_content {
+    border: 1px solid rgb(221, 220, 220);
+    border-top: hidden;
+}
+
+.hide_content {
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.87);
+    border-left: 1px solid rgba(128, 128, 128, 0.87);
+    border-right: 1px solid rgba(128, 128, 128, 0.87);
+    transition: 0.5s;
+    letter-spacing: 0.4px;
+}
+
+.hide_btn.active+.hide_content {
+    transition: 0.5s;
+    max-height: 100rem;
+}
+
+.hide_btn.active {
+    border-bottom: 1px solid rgba(161, 157, 157, 0.384);
+}
+
+.hide_btn.active::after {
+    content: "\25b4";
+}
+
+.contactUs_rightContent .hide_content h5 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin: 2rem;
+}
+
+.contactUs_rightContent .hide_content h5+p {
+    margin: 2rem;
+}
+
+.contactUs_rightContent .hide_content p {
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
+}
+
+.contactUs_rightContent .hide_content ul {
+    padding-left: 2rem;
+    line-height: 2rem;
+    margin: 2rem 3rem;
+}
+
+.contactUs_rightContent .hide_content ul>li {
+    font-size: 1.2rem;
+}
+
+
+/* CSS for the TOP FAQ that lies on the main page is written here */
+
+.main_contentFaq {
+    background-color: rgb(250, 250, 250);
+    padding-top: 6rem;
+}
+
+.FAQs_section>h2+p {
+    color: rgb(30, 45, 81);
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.FAQ_ques_section {
+    width: 93% !important;
+}
+
+.FAQ_ques_section>div {
+    width: 49%;
+    font-size: 1.4rem;
+    box-shadow: 0 0 5px #d2d2d2;
+    line-height: 3rem;
+    padding: 3rem;
+    font-weight: 300;
+    background-color: white;
+}
+
+.FAQ_ques_section>div:hover {
+    box-shadow: none;
+}
+
+.FAQ_ques_section>div>h3>i {
+    font-size: 1.5rem;
+    color: rgb(53, 50, 50);
+}
+
+.FAQ_ques_section>div>h3 {
+    font-weight: 500;
+}
+
+.FAQ_ques_section>div>h3+p {
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.FAQs_section>.blog_FAQ_link {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    margin: 3.5rem 0;
+}
+
+.popular_bike_for_rent {
+    display: grid;
+    width: 45%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    padding: 2rem;
+    box-shadow: 0 0 5px #d2d2d2;
+    margin-bottom: 5rem;
+}
+
+.popular_bike_for_rent>.popular_Bike_Heading {
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+}
+
+.popular_Bike_Heading>h5 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: gray;
+}
+
+
+/* CSS for the footer written here and this contains the complete footer part */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    text-shadow: 1px 1px 1px rgb(34, 33, 33);
+}
+
+.footer_upperPart>div>ul {
+    list-style: none;
+    line-height: 3rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.footer_upperPart>div>h5 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer_upperPart>div:last-child {
+    width: 45rem;
+    font-size: 1.2rem;
+}
+
+
+/* CSS for the social media links anf on hover properties of it in the footer section */
+
+.footer_upperPart .social_media_links {
+    margin-top: 1rem;
+    width: 38%;
+}
+
+.facebook_link,
+.insta_link,
+.twitter_link,
+.linkdin_link {
+    font-size: 1.5rem;
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    cursor: pointer;
+}
+
+.facebook_link:hover {
+    background-color: rgba(52, 52, 187, 0.65);
+    transition: 0.5s;
+}
+
+.twitter_link:hover {
+    background-color: rgb(58, 181, 230);
+    transition: 0.5s;
+}
+
+.insta_link:hover {
+    background-color: rgb(231, 96, 118);
+    transition: 0.5s;
+}
+
+.linkdin_link:hover {
+    background-color: rgb(26, 186, 250);
+    transition: 0.5s;
+}
+
+footer>.footer_upperPart+hr {
+    margin: 2.2rem 0;
+    background-color: white;
+}
+
+.footer_lowerPart {
+    font-size: 1.2rem;
+}
+
+.footer_lowerPart>h6 {
+    margin: 0.9rem 0;
+    font-size: 1.5rem;
+}
+
+.footer_lowerPart_heading {
+    margin: 0.9rem 0;
+}
+
+.footer_lowerPart+hr {
+    margin: 1.3rem 0;
+    background-color: white;
+}
+
+.copyRights {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+/* hamburger menu on scroll*/
+
+.hamburgerMenu {
+    display: none;
+    width: 4.8rem;
+    height: 4rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.scrollHamburger>div {
+    background-color: gray !important;
+}
+
+.hamburgerMenu>div {
+    width: 90%;
+    height: 10%;
+    border-radius: 1rem;
+    margin: auto;
+    margin-bottom: 0.6rem;
+    background-color: white;
+}
+
+.mobileNavBar {
+    position: absolute;
+    background-color: white;
+    top: 9rem;
+    height: 0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5fs;
+}
+
+.mobileNavBar.active {
+    height: 425%;
+    border-top: 1px solid rgb(197, 186, 186);
+    transition: 0.5s;
+}
+
+.mobileNavBar>ul>li {
+    list-style: none;
+    padding: 1.2rem 2rem;
+}
+
+.mobileNavBar>ul>li>a:hover {
+    color: orangered;
+}
+
+.mobileNavBar>ul>li>a {
+    text-decoration: none;
+    color: rgb(30, 45, 81);
+}
+
+#planName {
+    margin-top: -1rem;
+    text-align: center;
+    color: rgb(30, 45, 81);
+    position: relative;
+    z-index: 5;
+}
+
+#planName>.card {
+    padding: 0;
+}
+
+#planName>.card>p {
+    width: 100%;
+    padding: 1.2rem 0;
+    margin: 0;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+#planName>.card>p:hover {
+    background-color: rgb(30, 45, 81);
+    color: white;
+    transition: 0.2s;
+}
+
+
+/* The starting covid pop up that occur on page reload all the time */
+
+.covid_div {
+    position: fixed;
+    bottom: 3.5%;
+    width: 30rem;
+    height: 9rem;
+    border: 1px dashed rgb(30, 45, 81);
+    left: 1.5%;
+    z-index: 2;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    cursor: pointer;
+}
+
+.covid_div>img {
+    width: 100%;
+    height: 80px;
+}
+
+.covid_div>.covid_div_remove {
+    top: -10%;
+    right: -10%;
+}
+
+.covid_div>.covid_div_remove,
+.selectCity>.removeSelectCity,
+.loginPop>.loginPopRemove,
+.removeMyAccount {
+    position: absolute;
+    /* border-radius: 50%; */
+    width: 3.3rem;
+    height: 3.3rem;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaHW0SMQWZChkl4oDvFi4AYgt741v79pQc-A&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
+    /* background-position-x: center;
+    background-position-y: center; */
+}
+
+
+/* CSS for Selecting the city name in the ridenow div is written below */
+
+.selectCity {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    z-index: 2;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.selectCity>.removeSelectCity {
+    top: -2.5%;
+    right: -1.8%;
+}
+
+.selectCity>.searchArea {
+    width: 50%;
+    padding: 5% 1.9%;
+    float: left;
+    height: 100%;
+}
+
+.selectCity>.searchArea input {
+    width: 60%;
+    height: 3.4rem;
+    font-size: 1.3rem;
+    border: 1px solid rgba(153, 149, 149, 0.479);
+    padding: 1.2rem;
+    background: url(https://www.onnbikes.com/img/citysearch.svg) right no-repeat #f9f9f9;
+    background-size: auto;
+    border: none;
+    background-size: 25px 25px;
+    box-shadow: 0 0 3px #dad8d8;
+}
+
+.CitySearchInputInfo {
+    margin-top: 30%;
+    font-size: 1.4rem;
+}
+
+.city-search-input-info-para2 {
+    font-size: 2.1rem;
+    font-weight: 200;
+    margin-top: 3%;
+}
+
+.selectCity>.cityArea {
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.selectCity>.cityArea img {
+    width: 12rem;
+    text-align: center;
+    margin: 0.8rem;
+}
+
+.selectCity>.cityArea>.cityCont {
+    border: 1px solid rgba(148, 144, 144, 0.534);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selectCity>.cityArea>.cityCont>div>p {
+    color: gray;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+
+/* CSS and design for the calendar is written here  */
+
+.month p {
+    font-weight: 700;
+}
+
+.selectStartColumn,
+.endDateSpan {
+    color: rgba(165, 162, 162, 0.822);
+}
+
+.calendar,
+.calendar_timing {
+    margin-top: 0;
+    width: 160%;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.calendar>.month,
+.calendar>.days,
+.calendar_timing .wholeDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2d51;
+    color: white;
+    padding: 0 1.8rem;
+    font-weight: 700;
+}
+
+.calendar>.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.calendar>.dates>div {
+    border-right: 0.1px solid rgba(170, 164, 164, 0.568);
+    border-bottom: 0.1px solid rgba(170, 164, 164, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 15%;
+}
+
+.calendar .nextMonthDate,
+.calendar .prevMonthDate {
+    color: rgba(146, 135, 135, 0.801);
+}
+
+.calendar .past {
+    color: rgba(172, 165, 165, 0.301) !important;
+}
+
+.calendar .presentNFuture:hover {
+    background-color: rgba(170, 164, 164, 0.568);
+}
+
+.selectStartDate img,
+.endDateSelector img {
+    margin-left: 10%;
+}
+
+.calendar_timing .availableTimings {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.2rem;
+}
+
+.calendar_timing .availableTimings div {
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.calendar_timing .availableTimings div:hover {
+    background-color: rgba(128, 128, 128, 0.383);
+    transition: 0.5s;
+}
+
+.calendarStartingDate,
+.calendarEndDate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.calendarStartingDate strong,
+.calendarEndDate strong {
+    text-align: center;
+}
+
+.calendarStartingDate span,
+.calendarEndDate span {
+    font-size: 1.3rem;
+    padding: 0;
+    text-align: center;
+}
+
+.fb_google {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+.fb_google>div {
+    width: 48%;
+    height: 4.1rem;
+}
+
+.fb_google>div>button {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 4.3rem;
+    border: none;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.fb_google>div>button::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.4rem;
+    height: 100%;
+}
+
+.fb_google>.fbLogin>button {
+    background-color: #4c69ba;
+    background-image: linear-gradient(#4c69ba, #3b55a0);
+    text-shadow: 0 -1px 0 #354c8c;
+}
+
+.fb_google>.fbLogin>button::before {
+    background-color: #354f88 !important;
+    border-right: #364e92 1px solid;
+    background: url(images/login/icon_facebook_png.png) 7px 9px no-repeat;
+    background-size: auto;
+    padding: 0 1.7rem;
+    background-size: 1.7rem;
+}
+
+.fb_google>.googleLogin>button {
+    background: #dd4b39;
+}
+
+.fb_google>.googleLogin>button::before {
+    background-color: #ce3e26 !important;
+    border-right: #bb3f30 1px solid;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png) 7px 9px no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto;
+    padding: 0 1.7rem;
+    background-size: 1.7rem;
+}
+
+.divider {
+    position: relative;
+    border-bottom: 1px dashed rgba(51, 51, 51, 0.17);
+    margin: 8% 0;
+}
+
+.divider>span {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #666;
+    position: absolute;
+    top: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    transform: translateX(-50%);
+    line-height: 2.8rem;
+}
+
+.formSec>#login_form>.inputCont>input,
+#signup_form input {
+    outline: 0;
+    width: 100%;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.formSec>form input::placeholder {
+    font-size: 1.1rem;
+    color: rgba(42, 40, 40, 0.575);
+}
+
+.formSec>#login_form>.checkbox {
+    position: relative;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.formSec>#login_form>.checkbox::after {
+    content: "Forgot?";
+    position: absolute;
+    right: 1%;
+}
+
+.formSec>form>.login-Btn {
+    font-size: 1.8rem;
+    height: 4rem;
+    padding: 0.8px 0;
+    outline: 0;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    background-color: #2d3b55;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.formSec>form>.login-Btn+div {
+    margin: auto;
+    width: 40% !important;
+}
+
+.formSec>form>.login-Btn+div>a {
+    color: gray;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.formSec>form>.login-Btn+div>a:hover {
+    color: #2d3b55;
+}
+
+.hide {
+    display: none !important;
+}
+
+.formSec>#signup_form>div {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formSec>#signup_form>div>input {
+    width: 47%;
+}
+
+#signup_form>div {
+    margin-bottom: 1.5rem;
+}
+
+#signup_form input {
+    margin-bottom: 0.1px;
+}
+
+#signup_form>div input+.required_field,
+.warning {
+    margin: 0.1px 0;
+    color: red;
+    display: none;
+}
+
+
+/* CSS for the fleet and pricing pop up page */
+
+.fleetAndPricingOverlay-cont {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.fleetAndPricingOverlay-cont.active {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.fleetAndPricingOverlay-cont.absolute {
+    position: absolute !important;
+}
+
+.fleetAndPricingOverlay,
+.selectCity-overlay,
+.loginPopupOverlay,
+.myAccountOverlay,
+.paymentDoneOrNotOverlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    max-height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: 5;
+    overflow: auto;
+}
+
+.fleetAndPricing_city_cont {
+    max-height: 40rem;
+    min-height: 40rem;
+    overflow-y: auto;
+    line-height: 2.8rem;
+    background-color: white;
+    min-width: 19rem;
+    max-width: 19rem;
+    position: relative;
+}
+
+.fleetAndPricing_city_cont>.hide_btn-fleetNPricing {
+    width: 100%;
+    height: 5rem;
+    background-color: #2d3b55;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.fleetAndPricing_city_cont>.hide_btn-fleetNPricing::after {
+    content: "\25be";
+    position: absolute;
+    right: 5%;
+    transform: scale(1.5);
+}
+
+.fleetAndPricing_city_cont>.locations {
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    color: #2d3b55;
+}
+
+.hide_btn-fleetNPricing.active+.hide_content-fleetNPricing {
+    max-height: 100%;
+    transition: 0.5s;
+}
+
+.hide_content-fleetNPricing {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+
+.hide_content-fleetNPricing ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide_content-fleetNPricing ul>li {
+    list-style: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hide_content-fleetNPricing ul>li:hover {
+    color: #2d3b55;
+}
+
+.bike-slider-cont {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.fleetAndPricingOverlay .bike_cont_list {
+    width: 92rem;
+    height: 38rem;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    margin: 0 1rem;
+    /* border: 1px solid lime; */
+}
+
+.bike_cont_list>li {
+    list-style: none;
+}
+
+.bike_cont_list .bike_cont {
+    background-color: rgb(255, 255, 255);
+    width: 24rem;
+    height: 35rem;
+    margin-right: 5.2rem;
+    transition: 0.5s;
+}
+
+.bike_cont_list .bike_cont:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.bike_cont>.bike_img_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bike_cont>.bike_img_cont>img {
+    width: 14.8rem;
+}
+
+.bike_cont .bike-details {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.bike-details>h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bike-details>h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.bike-details p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.fleetAndPricingOverlay>ol>li .bike-details p>span {
+    color: #6d6d6d;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.bike-details>.bike-condition {
+    color: red;
+}
+
+.fleetAndPricingOverlay>.bike-slider-cont>button {
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.closeFleetAndPricing {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz85hzTu-s2ggnUSl3LvdF6INiIZy-MWylRQ&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    cursor: pointer;
+}
+
+
+/* responsive layout starts form here */
+
+@media only screen and (max-width: 1259px) {
+    .loginPop {
+        width: 70%;
+    }
+    .loginPop .formSec,
+    .loginPop .otpSec {
+        width: 62%;
+    }
+}
+
+@media only screen and (max-width: 1201px) {
+    /* login popup */
+    .loginPop {
+        right: 10% !important;
+        width: 80%;
+    }
+    .whyONN,
+    .app_link,
+    .featuredOn,
+    .contactUs,
+    .FAQs_section {
+        width: 110rem;
+    }
+    .contactUs_parts {
+        width: 98%;
+    }
+    .whyONN>.whyONN_advantages {
+        width: 100%;
+    }
+    .bike-slider-cont {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1133px) {
+    /* login popup */
+    .loginPop {
+        right: 23% !important;
+        width: 50%;
+    }
+    .loginPop .logoSec {
+        display: none;
+    }
+    .loginPop .formSec,
+    .loginPop .otpSec {
+        width: 100%;
+    }
+    .navigation_bar>ul {
+        width: 90%;
+    }
+    .whyONN,
+    .app_link,
+    .featuredOn,
+    .contactUs,
+    .FAQs_section {
+        width: 100rem;
+    }
+    .contactUs_parts {
+        width: 95%;
+    }
+    .whyONN>.whyONN_advantages {
+        width: 100%;
+    }
+    .FAQs_section>.blog_FAQ_link {
+        width: 95%;
+        margin: auto;
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+    footer {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media only screen and (max-width: 1041px) {
+    html {
+        font-size: 58%;
+    }
+    /* login popup */
+    .loginPop {
+        right: 20% !important;
+        width: 70%;
+    }
+}
+
+
+/* CSS responsive for one div in each line */
+
+@media only screen and (max-width: 947px) {
+    /* login popup */
+    .loginPop {
+        right: 3% !important;
+        width: 90%;
+    }
+    /* calnder responsive  */
+    .calendar,
+    .calendar_timing {
+        width: 150%;
+        position: relative;
+        left: -70%;
+    }
+    .selectStartDate .calendar,
+    .selectStartDate .calendar_timing {
+        width: 150%;
+        position: relative;
+        left: 30%;
+    }
+    .whyONN,
+    .app_link,
+    .featuredOn,
+    .contactUs,
+    .FAQs_section {
+        width: 80rem;
+    }
+    .tagLine {
+        width: 95%;
+    }
+    .tagLine>h1 {
+        font-size: 5rem !important;
+    }
+    .tagLine>h1+h3 {
+        font-size: 2.5rem !important;
+    }
+    /* ride now section */
+    .rideNow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 60rem;
+        height: 17rem;
+        background-color: transparent;
+    }
+    .rideNow>div {
+        width: 100%;
+        height: 5rem;
+        border: 0.8px solid rgb(173, 169, 169);
+        background-color: white;
+    }
+    .rideNowBtn {
+        grid-column: 1/-1;
+        width: 98%;
+        height: 4rem;
+        background-color: rgb(30, 45, 81);
+    }
+    .app_link {
+        display: block;
+    }
+    .app_link>div {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    /* whyOnn responsive */
+    .whyONN_advantages {
+        display: block;
+    }
+    .whyONN_advantages>div {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .whyONN_advantages>div>.whyONN_advantage_tagLine {
+        font-size: 2.4rem;
+    }
+    .whyONN_advantages>div>.whyONN_advantage_tagLine_content {
+        font-size: 1.7rem;
+    }
+    /* featuredOn_img pending */
+    .featuredOn>.featuredOn_img>div>img {
+        width: 10rem;
+        padding-top: 2rem;
+    }
+    /* contact_Us responsive */
+    .contactUs_parts {
+        display: block;
+        /* border: 1px solid red; */
+    }
+    .contactUs_parts>div {
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-bottom: 3rem;
+        width: 90%;
+    }
+    .contactUs_parts>.contactUs_leftContent>.form>.firstName_lastName {
+        display: block;
+    }
+    .contactUs_parts>.contactUs_leftContent>.form>.firstName_lastName>div {
+        width: 100%;
+    }
+    #formOptionBox {
+        z-index: 1;
+    }
+    /* FAQ_ques_section */
+    .FAQ_ques_section {
+        display: block;
+    }
+    .FAQ_ques_section>div {
+        margin: auto;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+    .FAQs_section>.blog_FAQ_link {
+        font-size: 1.2rem;
+    }
+    /* popular_bike_for_rent */
+    .popular_bike_for_rent {
+        display: block;
+        font-size: 1.4rem;
+        width: 70%;
+    }
+    .popular_Bike_Heading>h5 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: rgb(30, 45, 81);
+    }
+    /* footer_upperPart */
+    .footer_upperPart {
+        display: block;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .footer_lowerPart {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    /* here i am creating .hamburgerMenu */
+    .navigation_bar>ul>li>a {
+        display: none;
+    }
+    .navigation_bar>ul>.logo_li>a {
+        display: block;
+    }
+    .navigation_bar .logo_li img {
+        width: 7rem;
+    }
+    .navigation_bar {
+        height: 10rem;
+    }
+    .navigation_bar ul {
+        display: block;
+        position: relative;
+        width: 95vw;
+    }
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .whyONN,
+    .app_link,
+    .featuredOn,
+    .contactUs,
+    .FAQs_section {
+        width: 98%;
+    }
+    .tagLine {
+        margin-top: 20rem;
+        width: 100%;
+    }
+    .tagLine h1 {
+        font-size: 3.6rem !important;
+    }
+    .tagLine h1+h3 {
+        font-size: 1.9rem !important;
+    }
+    .rideNow {
+        width: 95%;
+    }
+    .featuredOn_img {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2%;
+    }
+    .featuredOn_img img {
+        width: 60% !important;
+        margin: 0 !important;
+        padding: 0;
+    }
+    /* ///making city popup responsive */
+    .selectCity .searchArea,
+    .cityArea {
+        clear: both;
+        width: 100% !important;
+    }
+    .removePencilIcon {
+        top: 0 !important;
+        right: 0 !important;
+    }
+    .myAccount .left-side {
+        width: 100%;
+    }
+    .myAccount .left-side .biker-icon {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .myAccount .right-side {
+        height: 48rem;
+    }
+    .myAccount .right-side .yourProfileCont .email-yourProfile,
+    .mobile-yourProfile {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /* //fleet and pricing popup */
+    .fleetAndPricing_city_cont {
+        width: 10%;
+    }
+    .bike-slider-cont {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .img_slideshow {
+        background-position: -400px !important;
+    }
+    .change-password input,
+    .edit-account input,
+    .email-yourProfile,
+    .mobile-yourProfile,
+    .edit-account textarea {
+        clear: both;
+        display: block;
+        width: 100%;
+    }
+    .myAccount .right-side {
+        height: 58rem;
+    }
+    .myAccount .right-side .change-password,
+    .edit-account {
+        height: 50%;
+        width: 120%;
+    }
+}
+
+@media only screen and (max-width: 437px) {
+    .footer_upperPart>div:last-child {
+        width: 98%;
+    }
+    /* //fleet and pricing popup */
+    .fleetAndPricing_city_cont {
+        width: 10%;
+        display: none;
+    }
+    .bike-slider-cont {
+        width: 90% !important;
+    }
+}
