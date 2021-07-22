@@ -26,6 +26,39 @@ p {
   margin: 0 0 10px;
 }
 
+.banerHome {
+  background: url(https://www.onnbikes.com/img/banner.jpg) no-repeat center;
+  width: 100%;
+  height: 35rem;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 100px rgb(0 0 0 / 90%) inset;
+  margin-bottom: 7rem;
+}
+
+.banerHome h1 {
+  width: 72%;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+}
+
+.banerHome p {
+  width: 60%;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+
 .Advantages.AdvantagesBox {
   margin: 3rem 0;
   text-align: center;
@@ -47,7 +80,6 @@ p {
   line-height: 1.2;
   letter-spacing: normal;
   width: 43.44rem;
-  margin-bottom: 5rem;
 }
 
 .Advantagesp1::after {
@@ -288,30 +320,28 @@ p {
     margin-left: 50px;
   }
 
-.benefitFirstdiv {
+  .benefitFirstdiv {
     width: 100vw;
-}
+  }
 
-.benefitFirstAlldiv {
+  .benefitFirstAlldiv {
     width: 35%;
-}
-.footerContDivs {
+  }
+  .footerContDivs {
     flex-direction: column;
-}
+  }
 
-.footerleftdiv {
+  .footerleftdiv {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.rightfooter {
-   flex-direction: column;
-   padding: 0;
-}
+  .rightfooter {
+    flex-direction: column;
+    padding: 0;
+  }
 
-.Advantagesp2 {
+  .Advantagesp2 {
     width: 42.13rem;
-}
-
-
+  }
 }
