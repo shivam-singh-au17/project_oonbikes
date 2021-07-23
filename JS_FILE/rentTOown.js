@@ -343,10 +343,11 @@ showAllBikes(JSON.parse(localStorage.getItem('OnnAllBikes')))
 
 
 function ccall() {
-
+    
+    showAllBikes(JSON.parse(localStorage.getItem('OnnAllBikes')))
     let mybtn = document.getElementById("ccall");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -366,8 +367,8 @@ function cc150() {
 
 
     let mybtn = document.getElementById("cc150");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -386,8 +387,8 @@ function cc350() {
 
 
     let mybtn = document.getElementById("cc350");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -408,8 +409,8 @@ function cc250() {
 
 
     let mybtn = document.getElementById("cc250");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -427,8 +428,8 @@ function cc500() {
     showAllBikes(myBikeArr)
 
     let mybtn = document.getElementById("cc500");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -446,8 +447,8 @@ function Comfort() {
     showAllBikes(myBikeArr)
 
     let mybtn = document.getElementById("Comfort");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -465,8 +466,8 @@ function Cruiser() {
     showAllBikes(myBikeArr)
 
     let mybtn = document.getElementById("Cruiser");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -484,26 +485,28 @@ function Gearless() {
     showAllBikes(myBikeArr)
 
     let mybtn = document.getElementById("Gearless");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
 
 function Geared() {
 
+    showAllBikes(JSON.parse(localStorage.getItem('OnnAllBikes')))
     let mybtn = document.getElementById("Geared");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
 
 function Motorbike() {
 
+    showAllBikes(JSON.parse(localStorage.getItem('OnnAllBikes')))
     let mybtn = document.getElementById("Motorbike");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -522,8 +525,8 @@ function Scooter() {
     showAllBikes(myBikeArr)
 
     let mybtn = document.getElementById("Scooter");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
 }
 
@@ -541,7 +544,12 @@ function Sport() {
     showAllBikes(myBikeArr)
 
     let mybtn = document.getElementById("Sport");
-    mybtn.style.background = "#eb7f23";
-    mybtn.style.color = "white"
+    // mybtn.style.background = "#eb7f23";
+    // mybtn.style.color = "white"
 
+}
+
+
+function RequestPrice() {
+    alert("Thank you for your message. It has been sent.")
 }
