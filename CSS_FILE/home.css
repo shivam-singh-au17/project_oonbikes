@@ -64,7 +64,7 @@ as we scroll doen and that CSS is written down in different style. */
 }
 
 .navigation_bar>ul {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     list-style: none;
     align-items: center;
 }
@@ -84,6 +84,7 @@ as we scroll doen and that CSS is written down in different style. */
 }
 
 .spacing_in_line {
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
 }
