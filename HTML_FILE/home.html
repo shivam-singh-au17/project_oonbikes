@@ -31,7 +31,7 @@
               >
             </li>
             <li>
-              <a href="#">SAFETY</a>
+              <a href="../HTML_FILE/safety.html">SAFETY</a>
                     </li>
                     <li class="logo_list">
                         <a href="#">
@@ -39,15 +39,26 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">FAQ</a>
+                        <a href="../HTML_FILE/faq1.html">FAQ</a>
                     </li>
                     <li style="position: relative">
                         <a href="#header_div" onclick="showLoginSignupPopup()" class="signupNav">
                 LOGIN/SIGNUP</a
               >
-            </li>
-            <li>
-              <a href="tel:+918378007800">+918378007800</a>
+              <a href="#" onclick="showWelcomeContent()" class="welcomeNav hide"
+                >WELCOME <span class="fa fa-caret-down"></span
+              ></a>
+                        <div class="welcome-hide_content">
+                            <p onclick="showMyAccount()">
+                                <i class="fa fa-user"></i> MY ACCOUNT
+                            </p>
+                            <p onclick="logoutUser()">
+                                <i class="fas fa-sign-out-alt"></i> LOGOUT
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="tel:+918378007800">+918378007800</a>
                     </li>
                     <div class="hamburgerMenu" onclick="showMobileNavBar()">
                         <div></div>
@@ -64,20 +75,34 @@
                   >
                 </li>
                 <li>
-                  <a href="#">SAFETY</a>
+                  <a href="../HTML_FILE/safety.html">SAFETY</a>
                             </li>
                             <li>
-                                <a href="#">FAQ</a>
+                                <a href="../HTML_FILE/faq1.html">FAQ</a>
                             </li>
 
                             <li style="position: relative">
                                 <a href="#header_div" onclick="showLoginSignupPopup()" class="signupNav">
                     LOGIN/SIGNUP</a
                   >
-                </li>
+                  <a
+                    href="#"
+                    onclick="showWelcomeContent()"
+                    class="welcomeNav hide"
+                    >WELCOME <span class="fa fa-caret-down"></span
+                  ></a>
+                                <div class="welcome-hide_content">
+                                    <p onclick="showMyAccount()">
+                                        <i class="fa fa-user"></i> MY ACCOUNT
+                                    </p>
+                                    <p onclick="logoutUser()">
+                                        <i class="fas fa-sign-out-alt"></i> LOGOUT
+                                    </p>
+                                </div>
+                            </li>
 
-                <li>
-                  <a href="#"> +918378007800</a>
+                            <li>
+                                <a href="#"> +918378007800</a>
                             </li>
                         </ul>
                     </div>
@@ -256,19 +281,20 @@
             <p>Our complete press coverage.</p>
             <div class="featuredOn_img spacing_in_line">
                 <div>
-                    <img src="" alt="" srcset="" onclick="location.href = ''" />
+                    <img src="https://www.onnbikes.com/img/feature/aninews.png" alt="" srcset="" onclick="location.href = 'https://www.aninews.in/news/business/business/onn-bikes-raises-rs-45-cr-funding-towards-expansion201711201813040001/'" />
                 </div>
                 <div>
-                    <img src="" alt="" srcset="" onclick="location.href = ''" />
+                    <img src="https://www.onnbikes.com/img/feature/business-standard.png" alt="" srcset="" onclick="location.href = 'https://www.business-standard.com/article/news-ani/onn-bikes-raises-rs-4-5-cr-funding-towards-expansion-117112000903_1.html'" />
                 </div>
                 <div>
-                    <img src="" alt="" srcset="" onclick="location.href = ''" />
+                    <img src="https://www.onnbikes.com/img/feature/bwdisrupt.png" alt="" srcset="" onclick="location.href = 'http://bwdisrupt.businessworld.in/article/ONN-Bikes-Raises-Pre-Series-A-Investment-from-Z-Nation-Lab-JITO-Angels-and-Venture-Catalysts/20-11-2017-132233/'"
+                    />
                 </div>
                 <div>
-                    <img src="" alt="" srcset="" onclick="location.href = ''" />
+                    <img src="https://www.onnbikes.com/img/feature/thenewsminute.png" alt="" srcset="" onclick="location.href = 'http://www.thenewsminute.com/article/bike-rental-startup-onn-bikes-raises-692000-pre-series-round-led-z-nation-lab-71926'" />
                 </div>
                 <div>
-                    <img src="" alt="" srcset="" onclick="location.href = ''" />
+                    <img src="https://www.onnbikes.com/img/feature/vvcircle.jpg" alt="" srcset="" onclick="location.href = 'https://www.vccircle.com/bike-rentals-startup-onn-bikes-raises-692k-in-pre-series-a-funding'" />
                 </div>
             </div>
         </div>
@@ -611,7 +637,8 @@
 
             <p class="blog_FAQ_link">
                 If you have any more doubts, please visit our
-                <a href="#">FAQ Section</a> <br /> Our Daily Bike Renting Plan is the most affordable plan in India. Check out our Fleet and Pricing section on top for more detailed information and if you are a bike enthusiast, check out our Blog.
+                <a href="../HTML_FILE/faq1.html">FAQ Section</a> <br /> Our Daily Bike Renting Plan is the most affordable plan in India. Check out our Fleet and Pricing section on top for more detailed information and if you are a bike enthusiast, check
+                out our Blog.
             </p>
             <div class="popular_bike_for_rent">
                 <div class="popular_Bike_Heading">
@@ -804,6 +831,18 @@
         src="https://www.onnbikes.com/img/covid-19-update.jpg"
         alt=""
         srcset=""
+        onclick="location.href = '../HTML_FILE/safety.html'"
+      />
+    </div>
+    <div class="newYear_div">
+      <div
+        class="newYear_div_remove"
+        onclick="removePopUp('newYear_div')"
+      ></div>
+      <img
+        src="https://marketingonn.s3.ap-south-1.amazonaws.com/WebsiteBanners/NewYear-2021-Desktop-Banner.jpg"
+        alt=""
+        srcset=""
         onclick="location.href = '#'"
       />
     </div>
@@ -867,7 +906,7 @@
           </div>
           <div class="fb_google">
             <div class="fbLogin">
-              <button>facebook</button>
+              <button>Facebook</button>
             </div>
             <div class="googleLogin">
               <button>Google+</button>
@@ -945,6 +984,46 @@
             </form>
         </div>
         </div>
+        </div>
+        <div class="contactUsForm-helpPopup-cont">
+            <div class="contactUsForm-helpPopup-heading-cont">
+                <h1 class="contactUsForm-helpPopup-heading">Contact ONN Support</h1>
+            </div>
+            <form id="contactUsForm-helpPopup">
+                <label for="name-popup">Your name</label>
+                <input type="text" name="name" id="name_popup" />
+
+                <label for="email-popup">Email <span>*</span></label>
+                <input type="text" name="email" id="email_popup" />
+
+                <label for="type">Type <span>*</span></label>
+                <div class="helpPopup-collapse-cont">
+                    <input type="button" name="type" id="type_popup" value="--" onclick="showHelpPopupCollapseContent()" />
+
+                    <div class="helpPopup-hide_content">
+                        <ul>
+                            <li>Breakdown/Accidents/Vehicle condition</li>
+                            <li>Bookings</li>
+                            <li>Payments</li>
+                            <li>Refund</li>
+                            <li>Extensions</li>
+                            <li>ONN Station</li>
+                            <li>Enquiries</li>
+                            <li>Cancellation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <label for="tell-us-more">Tell us more! <span>*</span></label>
+                <textarea name="tell-us-more" id="tell_us_more_popup" cols="30" rows="10"></textarea>
+                <button onclick="submitHelpPopup(event)">Send</button>
+                <p class="hide thank_you" style="color: green">
+                    Thank you for contacting us. We will get back to you!
+                </p>
+            </form>
+        </div>
+        <div class="helpPopup" onclick="showContactPopup()">
+            <i class="far fa-question-circle"></i> Help
         </div>
 
         <div class="fleetAndPricingOverlay-cont">
@@ -1119,6 +1198,74 @@
                     <button onclick="slide(+1)">
             <i class="fas fa-angle-right"></i>
           </button>
+                </div>
+            </div>
+        </div>
+        <div class="myAccountOverlay hide">
+            <div class="myAccount">
+                <div class="removeMyAccount" onclick="removePopUp('myAccountOverlay')"></div>
+                <div class="left-side">
+                    <div class="biker-icon"></div>
+                    <p class="user-name">Hema Shyamala</p>
+                    <p class="user-mail">hema@gmail.com</p>
+                    <p class="onn-credits">ONN Credits: 0</p>
+                    <hr />
+                    <button class="bookingHistory-myAccount active" onclick="changeRightOfAccount('historyCont','yourProfileCont','bookingHistory-myAccount','yourProfile-myAccount')">
+            <i class="fas fa-history"></i> Booking History
+          </button>
+                    <button class="yourProfile-myAccount" onclick="changeRightOfAccount('yourProfileCont','historyCont','yourProfile-myAccount','bookingHistory-myAccount')">
+            <i class="fa fa-home"></i> Your Profile
+          </button>
+                </div>
+
+                <div class="right-side">
+                    <div class="historyCont">
+                        <div class="no-booking-history">
+                            <h1>
+                                You have no previous booking with us. Please book a ride to see all updates regarding that in this page.
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="yourProfileCont hide">
+                        <div class="edit-account">
+                            <div class="removePencilIcon" onclick="enableInputBox('edit-account')"></div>
+                            <h3>Edit Account</h3>
+                            <input type="text" name="first_name" id="first_name-yourProfile" disabled value="Hema" />
+                            <input type="text" name="last_name" id="last_name-yourProfile" disabled value="Shyamala" />
+
+                            <div class="email-yourProfile">hema@gmail.com</div>
+                            <div class="mobile-yourProfile">8197836754</div>
+
+                            <textarea name="address" id="address-yourProfile" cols="41" rows="2" placeholder="Enter Address" disabled></textarea>
+                            <button onclick="updateCurrUserProfile('profile')">
+                <i class="fas fa-sync-alt"></i> UPDATE
+              </button>
+                        </div>
+
+                        <div class="change-password">
+                            <div class="removePencilIcon" onclick="enableInputBox('change-password')"></div>
+                            <h3>Change Password</h3>
+                            <input type="password" name="old-password" id="old-password" disabled placeholder="Old Password" />
+                            <input type="password" name="new-password" id="new-password" disabled placeholder="New Password" />
+                            <input type="password" name="confirm-password" id="confirm-password" disabled placeholder="Confirm Password" />
+                            <button onclick="updateCurrUserProfile('password')">
+                <i class="fas fa-sync-alt"></i> CHANGE PASSWORD
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="paymentDoneOrNotOverlay hide">
+            <div class="paymentDoneOrNot">
+                <div class="paymentDoneRemove" onclick="removePopUp('paymentDoneOrNotOverlay')"></div>
+                <div class="paymentResult">
+                    <h1>YOUR BOOKING WAS SUCCESSFUL. PAYMENT DONE.</h1>
+                    <h1 style="color: #1d2d51">
+                        THANK YOU <i class="fas fa-glass-cheers"></i>
+                    </h1>
                 </div>
             </div>
         </div>
