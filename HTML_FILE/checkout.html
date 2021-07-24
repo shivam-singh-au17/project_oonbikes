@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="preconnect" href="/tserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../CSS_FILE/checkout.css">
+</head>
+
+<body>
+    <div class="safety">
+        <div class="safety-banner">
+
+
+        </div>
+
+
+        <div id="checkout-main-cont">
+
+            <div id="bike-data">
+
+                <div id="bike-img">
+                    <p id="comapny-name"></p>
+                    <p id="model-name"></p>
+                    <div id="bike-pic">
+
+                    </div>
+                    <p id="abc1">PICKUP & RETURN LOCATION</p>
+                    <a id="abc2"></a>
+                </div>
+
+                <div id="extra-info">
+
+                    <div id="extra-info-p">
+                        <p>Late return first two hours of delay ₹ 200</p>
+                        <p>₹ 18 per hour after first two hours of delay</p>
+                    </div>
+
+                    <div id="extra-info-extra">
+                        <img src="./img/tachometer-alt-solid.svg" id="tachometer" alt="">
+                        <p>100 km/hour</p>
+                        <img src="./img/road-solid.svg" id="roadSolid" alt="">
+                        <p id="freeKm"></p>
+                        <img src="./img/coins-solid.svg" id="coinSolid" alt="">
+                        <p id="excess"></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="paisa">
+
+                <div id="start-end">
+
+                    <div id="start">
+                        <p>START TRIP</p>
+
+                        <div>
+
+                            <div id="mnth">
+                                <p id="month_day"></p>
+                                <p id="monthYear">jun</p>
+                                <!-- <p id="year"></p> -->
+                            </div>
+
+                            <div id="weekly">
+                                <p id="day">wednesday</p>
+                                <p id="timehrs">10</p>
+                                <!-- <p id="mode">am</p> -->
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="end">
+
+                        <p>END TRIP</p>
+
+                        <div>
+
+                            <div id="mnth1">
+                                <p id="month_day1">16</p>
+                                <p id="monthYear1">jun21</p>
+                            </div>
+
+                            <div id="weekly1">
+                                <p id="day1">wednesday</p>
+                                <p id="timehrs1">10</p>
+                                <!-- <p id="mode1">am</p> -->
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div id="refund-dep">
+                    <div></div>
+                    <div id="alpha">
+                        <p>Refundable Deposit</p>
+                        <p>This amount has to be paid at the time of vehicle delivery</p>
+                    </div>
+                    <div>
+                        <p>₹0</p>
+                    </div>
+                </div>
+
+                <div id="bill-space">
+                    <p>PRICING</p>
+                    <div id="jug">
+                        <p>Tariff (Inclusive of all taxes)</p>
+                        <p id="price_without_discount">₹ 0</p>
+                    </div>
+
+                    <div id="jug1">
+                        <div></div>
+
+
+                        <input type="text" id="inp" placeholder="PROMO CODE">
+
+
+                        <label id="redlabel">
+                        <div id="tick"><img src="./img/checked.png" alt="" id="promocodetick"></div>
+                    </label>
+
+                        <div id="promo-code-price">
+                            <p id="promo-code-price1"></p>
+                        </div>
+
+                    </div>
+
+                    <div id="jug2">
+                        <div id="insureTheRide-btn">
+                            <!-- dynamic-image -->
+                        </div>
+                        <div id="beta">
+                            <p>Insure my ride</p>
+                            <p>Covers the rider, pillion and the vehicle T&C</p>
+                        </div>
+                        <div>
+                            <p id="insureTheRide_price">₹0</p>
+                        </div>
+                    </div>
+
+                    <div id="total-pricing">
+
+                        <p>Total Amount</p>
+                        <p id="total_amount_phir_se">₹848</p>
+
+                    </div>
+
+                    <div id="bhaukal">
+
+
+                        <div>
+
+                            <div class="dummy1" id="haebo1">
+                                <img src="./img/remove.png" alt="rmv">
+                            </div>
+
+                            <p>Excludes fuel</p>
+
+                        </div>
+
+
+
+
+                        <div>
+                            <div class="dummy1" id="haebo">
+                                <img src="./img/green_tick.png" alt="tick">
+                            </div>
+
+                            <p>Includes all taxes</p>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div id="tANDc">
+
+                    <div>
+
+                        <div id="sliding-tick">
+
+                            <label class="switch">
+                            <input id="checkbox" type="checkbox">
+                            <span class="slider round"></span>
+                            </label>
+
+                        </div>
+                        <p id="tc"> I agree to the terms of use</p>
+
+                    </div>
+
+                    <button id="payment-total" onclick="showPaymentPage()">PAYMENT</button>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+<script src="../JS_FILE/checkout.js"></script>
