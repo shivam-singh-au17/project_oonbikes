@@ -64,8 +64,8 @@ as we scroll doen and that CSS is written down in different style. */
 }
 
 .navigation_bar>ul {
-    font-size: 1.1rem;
     width: 113rem;
+    font-size: 1.5rem;
     list-style: none;
     align-items: center;
 }
@@ -86,6 +86,7 @@ as we scroll doen and that CSS is written down in different style. */
 }
 
 .spacing_in_line {
+    width: 95%;
     display: flex;
     justify-content: space-between;
 }
@@ -474,9 +475,6 @@ as we scroll doen and that CSS is written down in different style. */
     color: white;
 }
 
-
-/* CSS for the drop down accordian in the right of contact us lies here */
-
 .contactUs_rightContent {
     margin-bottom: 4rem;
 }
@@ -576,10 +574,7 @@ as we scroll doen and that CSS is written down in different style. */
     font-size: 1.2rem;
 }
 
-
-/* CSS for the TOP FAQ that lies on the main page is written here */
-
-.main_contentFaq {
+.FAQ_mainPage {
     background-color: rgb(250, 250, 250);
     padding-top: 6rem;
 }
@@ -655,16 +650,13 @@ as we scroll doen and that CSS is written down in different style. */
     color: gray;
 }
 
-
-/* CSS for the footer written here and this contains the complete footer part */
-
 footer {
     background-color: rgba(0, 0, 0, 0.692);
     color: white;
     padding-left: 6rem;
     padding-right: 6rem;
     padding-top: 3rem;
-    text-shadow: 1px 1px 1px rgb(34, 33, 33);
+    text-shadow: 1px 1px 1px rgb(165, 165, 165);
 }
 
 .footer_upperPart>div>ul {
@@ -683,9 +675,6 @@ footer {
     width: 45rem;
     font-size: 1.2rem;
 }
-
-
-/* CSS for the social media links anf on hover properties of it in the footer section */
 
 .footer_upperPart .social_media_links {
     margin-top: 1rem;
@@ -758,9 +747,6 @@ footer>.footer_upperPart+hr {
     margin: 0;
 }
 
-
-/* hamburger menu on scroll*/
-
 .hamburgerMenu {
     display: none;
     width: 4.8rem;
@@ -782,7 +768,7 @@ footer>.footer_upperPart+hr {
     background-color: white;
 }
 
-.mobileNavBar {
+.mobileNavigation {
     position: absolute;
     background-color: white;
     top: 9rem;
@@ -792,22 +778,22 @@ footer>.footer_upperPart+hr {
     transition: 0.5fs;
 }
 
-.mobileNavBar.active {
+.mobileNavigation.active {
     height: 425%;
     border-top: 1px solid rgb(197, 186, 186);
     transition: 0.5s;
 }
 
-.mobileNavBar>ul>li {
+.mobileNavigation>ul>li {
     list-style: none;
     padding: 1.2rem 2rem;
 }
 
-.mobileNavBar>ul>li>a:hover {
+.mobileNavigation>ul>li>a:hover {
     color: orangered;
 }
 
-.mobileNavBar>ul>li>a {
+.mobileNavigation>ul>li>a {
     text-decoration: none;
     color: rgb(30, 45, 81);
 }
@@ -837,9 +823,6 @@ footer>.footer_upperPart+hr {
     color: white;
     transition: 0.2s;
 }
-
-
-/* The starting covid pop up that occur on page reload all the time */
 
 .covid_div {
     position: fixed;
@@ -872,31 +855,27 @@ footer>.footer_upperPart+hr {
 }
 
 .covid_div>.covid_div_remove {
-    top: -10%;
-    right: -10%;
+    top: -16%;
+    right: -8%;
 }
 
 .newYear_div>.newYear_div_remove {
-    top: -8%;
-    right: -4%;
+    top: -12%;
+    right: -3%;
 }
 
 .covid_div>.covid_div_remove,
 .newYear_div>.newYear_div_remove,
 .selectCity>.removeSelectCity,
 .loginPop>.loginPopRemove,
-.removeMyAccount {
-    position: absolute;
+.removeMyAccount,
+.paymentDoneRemove {
     width: 3.3rem;
     height: 3.3rem;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0nEPJ8PgKzzb0q2fhHWtE5mGfh48Z-CE0IQtO31gqiqU4x0MlzmGd2w-CfAKNUBxcTGQ&usqp=CAU);
-    /* border: 5px solid greenyellow; */
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
+    background-position: -7466px 0;
+    background-image: url(../IMG_FILE/completeImg.png);
+    position: absolute;
     cursor: pointer;
-    /* border: 5px solid greenyellow; */
-    /* background-position-x: center;
-    background-position-y: center; */
 }
 
 #popup {
@@ -926,9 +905,6 @@ footer>.footer_upperPart+hr {
     text-decoration: none;
     color: rgb(7, 7, 7);
 }
-
-
-/* CSS for Selecting the city name in the ridenow div is written below */
 
 .selectCity {
     position: absolute;
@@ -1006,9 +982,6 @@ footer>.footer_upperPart+hr {
     text-align: center;
     font-size: 1.9rem;
 }
-
-
-/* CSS and design for the calendar is written here  */
 
 .month p {
     font-weight: 700;
@@ -1147,14 +1120,10 @@ footer>.footer_upperPart+hr {
     padding: 1.5rem 2rem;
 }
 
-
-/* .otpSec css starts form here */
-
 .otpSec>input {
     outline: none;
     width: 100%;
     color: #000;
-    /* font-size: 13px; */
     background: #fff;
     border: none;
     border-bottom: 1px solid #e0e0e0;
@@ -1388,9 +1357,6 @@ footer>.footer_upperPart+hr {
     display: none;
 }
 
-
-/* CSS for the fleet and pricing pop up page */
-
 .fleetAndPricingOverlay-cont {
     position: fixed;
     top: 0;
@@ -1513,7 +1479,6 @@ footer>.footer_upperPart+hr {
     display: flex;
     overflow: hidden;
     margin: 0 1rem;
-    /* border: 1px solid lime; */
 }
 
 .bike_cont_list>li {
@@ -1592,11 +1557,10 @@ footer>.footer_upperPart+hr {
 }
 
 .closeFleetAndPricing {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz85hzTu-s2ggnUSl3LvdF6INiIZy-MWylRQ&usqp=CAU);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
+    width: 3.3rem;
+    height: 3.3rem;
+    background-position: -7466px 0;
+    background-image: url(../IMG_FILE/completeImg.png);
     position: absolute;
     top: 15%;
     right: 5%;
@@ -1617,7 +1581,7 @@ footer>.footer_upperPart+hr {
     display: none;
 }
 
-.welcomeNav.active+.welcome-hide_content {
+.welcomeNavigation.active+.welcome-hide_content {
     display: block;
 }
 
@@ -1658,7 +1622,7 @@ footer>.footer_upperPart+hr {
     margin: auto;
     margin-top: 50%;
     margin-bottom: 5%;
-    background-image: url(images/covid_update/cross.png);
+    background-image: url(../IMG_FILE/completeImg.png);
 }
 
 .myAccount .left-side .user-name {
@@ -1726,7 +1690,7 @@ footer>.footer_upperPart+hr {
 }
 
 .historyCont {
-    background-image: url(images/history-bg/history-bg.svg);
+    background-image: url(https://www.onnbikes.com/img/errorpage.svg);
     width: 100%;
     height: 100%;
     background-size: 73%;
@@ -1746,8 +1710,147 @@ footer>.footer_upperPart+hr {
     color: red;
 }
 
+.helpPopup {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    padding: 1rem 1.3rem;
+    color: white;
+    background-color: green;
+    font-size: 1.3rem;
+    font-weight: 600 !important;
+    letter-spacing: 1px;
+    border-radius: 30px 8px 30px 30px;
+    cursor: pointer;
+}
 
-/* .right-side your profile */
+.helpPopup:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+    transform: scale(1.04);
+    transition: all 0.5s linear 0s;
+    background: rgb(23, 133, 45) radial-gradient(circle, transparent 1%, rgb(23, 133, 45) 1%) repeat scroll center center / 15000%;
+}
+
+.contactUsForm-helpPopup-cont {
+    position: fixed;
+    bottom: 13%;
+    right: 2%;
+    height: 0;
+    width: 0;
+    z-index: 11;
+    background-color: rgb(231, 234, 238);
+    color: black;
+    overflow: auto;
+    transition: none;
+    border-radius: 10px;
+}
+
+.contactUsForm-helpPopup-cont.active {
+    width: 30%;
+    height: 70%;
+    transition: 0.5s;
+    box-shadow: rgb(0 0 0 / 20%) 2px 2px 10px 4px;
+}
+
+#contactUsForm-helpPopup {
+    margin: 10rem 1.6rem 0px;
+    padding: 4rem 1.6rem 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    transition: padding 0.3s ease-out 0s;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    position: absolute;
+    width: 92%;
+}
+
+#contactUsForm-helpPopup>label>span {
+    color: red;
+    font-size: 1.3rem;
+}
+
+#contactUsForm-helpPopup input {
+    padding: 1.1rem 0.8rem 1rem 1.2rem;
+    margin: 0.5rem 0px 0.3rem;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid rgb(207, 215, 223);
+    width: 100%;
+    box-shadow: rgba(18, 52, 77, 0.05) 0px 1px 2px 0px inset;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: start;
+}
+
+#contactUsForm-helpPopup textarea[id="tell_us_more_popup"] {
+    margin-top: 0.5rem;
+    height: 18rem;
+    width: 100%;
+    border-radius: 4px;
+    padding: 1.1rem 0.8rem 1rem 1.2rem;
+    border: 1px solid rgb(207, 215, 223);
+    box-shadow: rgba(18, 52, 77, 0.05) 0px 1px 2px 0px inset;
+}
+
+.contactUsForm-helpPopup-heading-cont {
+    background-color: black;
+    color: white;
+    position: absolute;
+    height: 15rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#contactUsForm-helpPopup>button {
+    padding: 0.9rem 0.8rem;
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 4px 0px;
+    background: rgb(23, 133, 45);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+    min-width: 14rem;
+    margin: 2rem 0;
+    outline: none;
+    border-radius: 8px;
+}
+
+#contactUsForm-helpPopup>button:hover {
+    transform: scale(104%);
+    background-color: rgb(24, 155, 50);
+}
+
+.helpPopup-collapse-cont {
+    position: relative;
+}
+
+.helpPopup-hide_content {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 20rem;
+    overflow: auto;
+    height: 0;
+    transition: 0.5s;
+}
+
+.helpPopup-collapse-cont.active .helpPopup-hide_content {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: 20rem;
+    transition: 0.5s;
+}
+
+.helpPopup-hide_content ul li {
+    list-style: none;
+    padding: 1rem;
+    cursor: pointer;
+}
 
 .right-side .yourProfileCont {
     height: 100%;
@@ -1785,7 +1888,6 @@ footer>.footer_upperPart+hr {
     margin-right: 4%;
     height: 3.5rem;
     background: white;
-    /* background-color: rgba(197, 191, 191, 0.116); */
     padding: 1%;
     outline: none;
 }
@@ -1835,7 +1937,7 @@ footer>.footer_upperPart+hr {
     width: 2.3rem;
     height: 2.3rem;
     background-position: -5663px 0;
-    background-image: url(images/covid_update/cross.png);
+    background-image: url(../IMG_FILE/completeImg.png);
     position: absolute;
     right: 3.4rem;
     top: 2.2rem;
@@ -1848,40 +1950,642 @@ footer>.footer_upperPart+hr {
 }
 
 .paymentDoneOrNot {
-    background-image: url(images/history-bg/history-bg.svg);
-    width: 65%;
-    height: 40rem;
+    background-image: url(https://www.onnbikes.com/img/errorpage.svg);
+    width: 75%;
+    height: 50rem;
     background-size: 47%;
     background-repeat: no-repeat;
     background-position: 224px 7px;
     padding: 80px 0;
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(245, 244, 244, 0.295) 5px 14px 28px, rgba(255, 253, 253, 0.24) 10px 10px 10px;
     position: relative;
 }
 
 .paymentDoneRemove {
     position: absolute;
-    top: -1rem;
-    right: -1rem;
+    top: -2rem;
+    right: -3rem;
 }
 
 .paymentResult {
     color: green;
     line-height: 5rem;
-    box-shadow: 0 0 5px rgba(31, 31, 31, 0.5);
     text-align: center;
-    padding: 70px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 75%;
+    width: 90%;
     font-size: 1.5rem;
+    margin: auto;
 }
 
+#checkout-main-cont {
+    margin: 0% auto;
+    display: flex;
+    flex-direction: row wrap;
+}
 
-/* responsive layout starts form here */
+#bike-data {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#bike-img {
+    width: 90%;
+}
+
+#company_name {
+    font-size: 14px;
+    margin-bottom: auto;
+    font-weight: 500;
+    margin-top: 0;
+    color: #1e2d51;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+}
+
+#model-name {
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 0;
+    color: #1e2d51;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#bike-pic {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#bike-pic img {
+    width: 200px;
+    height: 150px;
+    margin-left: -80%;
+    margin-bottom: -10%;
+}
+
+#abc1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: -5%;
+    color: #090e1a;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: left;
+    font-weight: bold;
+}
+
+#abc2 {
+    font-size: 8px;
+    color: rgb(75, 75, 226);
+    text-align: left;
+    margin-top: -30%;
+    width: 120%;
+    margin-left: -5%;
+}
+
+#abc2:hover {
+    text-decoration: underline;
+}
+
+#extra-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#extra-info-p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -15%;
+    color: #090e1a;
+}
+
+#extra-info-p>p {
+    line-height: 16px;
+    font-size: 11px;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 0%;
+}
+
+#extra-info-extra {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
+}
+
+#extra-info-extra>p {
+    font-size: 10px;
+    color: #b9b8b8;
+    text-decoration: none;
+}
+
+#tachometer {
+    margin-top: 5%;
+    width: 37px;
+    height: 24px;
+    background-position: -863px 0;
+    background-image: url(../IMG_FILE/completeImg.png);
+}
+
+#roadSolid {
+    margin-top: 5%;
+    width: 14px;
+    height: 19px;
+    background-position: -3081px 0;
+    background-image: url(../IMG_FILE/completeImg.png);
+}
+
+#coinSolid {
+    margin-top: 5%;
+    width: 30px;
+    height: 30px;
+    background-position: -2365px 0;
+    background-image: url(../IMG_FILE/completeImg.png);
+    background-repeat: no-repeat;
+    position: relative;
+    border-color: none;
+}
+
+#paisa {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#start-end {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+#start {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    color: #1e2d51;
+}
+
+#start>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#end>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#end {
+    display: flex;
+    flex-direction: column;
+    color: #1e2d51;
+}
+
+#end>p:nth-child(1) {
+    color: #1d2d51;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: -5%;
+    margin-bottom: -8%;
+}
+
+#start>p:nth-child(1) {
+    color: #1d2d51;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: -5%;
+    margin-bottom: -8%;
+}
+
+#month_day,
+#month_day1 {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    color: #1e2d51;
+    margin: 0%;
+    padding: 0%;
+    margin-right: 9%;
+    padding-bottom: -5%;
+    margin-top: -8%;
+}
+
+#monthYear,
+#monthYear1 {
+    margin: 0%;
+    padding: 0%;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #1e2d51;
+    padding-bottom: -5%;
+    margin-top: -8%;
+}
+
+#day,
+#day1 {
+    font-size: 13px;
+    padding: 0%;
+    padding-left: 9%;
+    margin-bottom: 0%;
+    color: #1e2d51;
+    padding-bottom: -5%;
+    margin-top: -8%;
+}
+
+#timehrs,
+#timehrs1 {
+    padding: 0%;
+    margin: 0%;
+    padding-left: 9%;
+    text-align: start;
+    font-size: 13px;
+    padding-bottom: -5%;
+    margin-top: -8%;
+}
+
+#mode,
+#mode1 {
+    padding: 0%;
+    margin: 0%;
+    text-align: start;
+    padding-left: 9%;
+    font-size: 13px;
+    padding-bottom: 13%;
+    padding-bottom: -5%;
+    margin-top: -8%;
+}
+
+#refund-dep {
+    width: 100%;
+    margin: 0% auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+    box-shadow: 0 0 4px rgb(31 31 31 / 50%);
+    border: 1px solid rgb(221, 215, 215);
+    display: flex;
+    flex-direction: row;
+}
+
+#refund-dep>div:nth-child(1) {
+    height: 100%;
+    width: 2%;
+    background-color: rgb(1, 1, 65);
+}
+
+#alpha {
+    width: 90%;
+}
+
+#alpha>p:nth-child(1) {
+    line-height: 18px;
+    font-weight: 300;
+    margin-top: 4%;
+    margin-left: 3%;
+    font-size: 15px;
+    color: #555655;
+}
+
+#alpha>p:nth-child(2) {
+    line-height: 18px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #555655;
+    margin-left: 2%;
+}
+
+#refund-dep>div:nth-child(3) {
+    margin-top: 5%;
+}
+
+#bill-space {
+    margin-top: 1%;
+    background-color: white;
+    color: #555655;
+    padding: 10px;
+    box-shadow: 0 0 4px rgb(31 31 31 / 50%);
+    border: 1px solid rgb(221, 215, 215);
+}
+
+#bill-space>p:nth-child(1) {
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #555655;
+    background-color: #fff;
+    margin: 2%;
+    margin-bottom: 0%;
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+    font-weight: 300;
+}
+
+#jug {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#jug>p {
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+    margin: 1%;
+    margin-bottom: 0%;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+#jug1 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    margin-top: 1%;
+    flex-direction: row;
+}
+
+#jug1>div:nth-child(1) {
+    width: 100%;
+    height: 1%;
+    margin-top: 5%;
+    background-color: rgba(17, 17, 17, 0.466);
+}
+
+#inp {
+    width: 240%;
+    height: 70%;
+    border: transparent;
+    border-radius: 15px;
+    border: 1px solid #c2c2c2;
+    padding: 0.5% 4%;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    background-color: #f4f6fb;
+}
+
+#inp:focus {
+    outline: none;
+}
+
+#redlabel>div {
+    cursor: pointer;
+}
+
+#tick {
+    width: 17%;
+    padding: 2%;
+    height: 100%;
+    background-position: -5902px 0;
+}
+
+#tick>img {
+    width: 150%;
+    margin-top: 10%;
+    margin-left: 60%;
+}
+
+#promo-code-price {
+    width: 45%;
+    margin-right: 2%;
+}
+
+#jug2 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    margin-top: 1%;
+    flex-direction: row;
+    margin-bottom: 0%;
+}
+
+#insureTheRide-btn {
+    width: 28px;
+    height: 28px;
+    margin-left: 1%;
+    margin: 0%;
+    padding: 0%;
+    border: 0.3px solid grey;
+    border-radius: 50%;
+}
+
+#insureTheRide-btn>img {
+    width: 100%;
+    padding: 0%;
+    height: 100%;
+}
+
+#beta {
+    height: 50%;
+}
+
+#beta>p {
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+    margin: 0%;
+    margin-left: 3%;
+    font-size: 9px;
+    letter-spacing: 0.6px;
+    padding-bottom: 0%;
+}
+
+#beta>p:nth-child(1) {
+    font-size: 12px;
+}
+
+#jug2>div:nth-child(3) {
+    margin-top: 5%;
+    margin-left: 31%;
+    margin-bottom: 1%;
+}
+
+#total-pricing {
+    width: 98%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#total-pricing>p {
+    font-size: 18px;
+    margin-top: 0%;
+    font-weight: 300;
+}
+
+#bhaukal {
+    display: flex;
+    flex-direction: row;
+}
+
+#bhaukal>div {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#bhaukal>div:nth-child(2) {
+    width: 60%;
+}
+
+#haebo {
+    margin-left: 20%;
+    font-size: x-small;
+}
+
+#haebo>img {
+    width: 150%;
+}
+
+#haebo1 {
+    margin-left: 4%;
+}
+
+#haebo1>img {
+    width: 100%;
+    padding: 1%;
+}
+
+.dummy1 {
+    width: 20px;
+    margin-top: -1%;
+}
+
+.dummy1>img {
+    width: 100%;
+}
+
+#bhaukal>div>p {
+    font-size: 12px;
+    color: #1d2d51;
+    text-decoration: none;
+    margin-top: 3%;
+}
+
+#tANDc {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tANDc>div {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    padding-top: 1%;
+}
+
+#sliding-tick {
+    width: 13.5%;
+    height: 50%;
+    margin-right: 4%;
+    margin-left: 1%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    height: 25px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 48.8px;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    bottom: .4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #2196f3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#tc {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 28px;
+    font-weight: 700;
+    color: rgb(48, 82, 124);
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+    font-weight: 700;
+    font-size: 85%;
+    font-style: italic;
+}
+
+#payment-total {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(210, 211, 212);
+    border: 1px solid rgb(141, 141, 141);
+}
 
 @media only screen and (max-width: 1259px) {
     .loginPop {
@@ -1894,7 +2598,6 @@ footer>.footer_upperPart+hr {
 }
 
 @media only screen and (max-width: 1201px) {
-    /* login popup */
     .loginPop {
         right: 10% !important;
         width: 80%;
@@ -1918,7 +2621,6 @@ footer>.footer_upperPart+hr {
 }
 
 @media only screen and (max-width: 1133px) {
-    /* login popup */
     .loginPop {
         right: 23% !important;
         width: 50%;
@@ -1962,23 +2664,17 @@ footer>.footer_upperPart+hr {
     html {
         font-size: 58%;
     }
-    /* login popup */
     .loginPop {
         right: 20% !important;
         width: 70%;
     }
 }
 
-
-/* CSS responsive for one div in each line */
-
 @media only screen and (max-width: 947px) {
-    /* login popup */
     .loginPop {
         right: 3% !important;
         width: 90%;
     }
-    /* calnder responsive  */
     .calendar,
     .calendar_timing {
         width: 150%;
@@ -2007,7 +2703,6 @@ footer>.footer_upperPart+hr {
     .tagLine>h1+h3 {
         font-size: 2.5rem !important;
     }
-    /* ride now section */
     .rideNow {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2035,7 +2730,6 @@ footer>.footer_upperPart+hr {
         text-align: center;
         margin-bottom: 1rem;
     }
-    /* whyOnn responsive */
     .whyONN_advantages {
         display: block;
     }
@@ -2051,18 +2745,14 @@ footer>.footer_upperPart+hr {
     .whyONN_advantages>div>.whyONN_advantage_tagLine_content {
         font-size: 1.7rem;
     }
-    /* featuredOn_img pending */
     .featuredOn>.featuredOn_img>div>img {
         width: 10rem;
         padding-top: 2rem;
     }
-    /* contact_Us responsive */
     .contactUs_parts {
         display: block;
-        /* border: 1px solid red; */
     }
     .contactUs_parts>div {
-        /* border: 1px solid black; */
         margin: auto;
         margin-bottom: 3rem;
         width: 90%;
@@ -2076,7 +2766,6 @@ footer>.footer_upperPart+hr {
     #formOptionBox {
         z-index: 1;
     }
-    /* FAQ_ques_section */
     .FAQ_ques_section {
         display: block;
     }
@@ -2088,7 +2777,6 @@ footer>.footer_upperPart+hr {
     .FAQs_section>.blog_FAQ_link {
         font-size: 1.2rem;
     }
-    /* popular_bike_for_rent */
     .popular_bike_for_rent {
         display: block;
         font-size: 1.4rem;
@@ -2099,7 +2787,6 @@ footer>.footer_upperPart+hr {
         font-weight: 600;
         color: rgb(30, 45, 81);
     }
-    /* footer_upperPart */
     .footer_upperPart {
         display: block;
         padding-left: 2%;
@@ -2111,7 +2798,6 @@ footer>.footer_upperPart+hr {
 }
 
 @media only screen and (max-width: 745px) {
-    /* here i am creating .hamburgerMenu */
     .navigation_bar>ul>li>a {
         display: none;
     }
@@ -2165,7 +2851,6 @@ footer>.footer_upperPart+hr {
         margin: 0 !important;
         padding: 0;
     }
-    /* ///making city popup responsive */
     .selectCity .searchArea,
     .cityArea {
         clear: both;
@@ -2191,7 +2876,6 @@ footer>.footer_upperPart+hr {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    /* //fleet and pricing popup */
     .fleetAndPricing_city_cont {
         width: 10%;
     }
@@ -2227,7 +2911,6 @@ footer>.footer_upperPart+hr {
     .footer_upperPart>div:last-child {
         width: 98%;
     }
-    /* //fleet and pricing popup */
     .fleetAndPricing_city_cont {
         width: 10%;
         display: none;

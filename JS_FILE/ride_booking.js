@@ -22,7 +22,20 @@
 //     }, 2000);
 // }
 // slideshow();
-// var hr = 1;
+
+var hr = 1;
+
+function showSignup() {
+    let login = document.getElementById("login_form");
+    let signup = document.getElementById("signup_form");
+    let heading = document.getElementsByClassName("heading")[0];
+    let loginHeading = heading.children[0];
+    let signupHeading = heading.children[1];
+    login.classList.toggle("hide");
+    signup.classList.toggle("hide");
+    loginHeading.classList.toggle("currForm");
+    signupHeading.classList.toggle("currForm");
+}
 
 function dayrating() {
     function diff_hours(dt2, dt1) {
@@ -44,8 +57,8 @@ function dayrating() {
         "Nov",
         "Dec",
     ];
-    let d1 = JSON.parse(localStorage.getItem("startDateObj"));
-    let d2 = JSON.parse(localStorage.getItem("endDateObj"));
+    let d1 = JSON.parse(localStorage.getItem("startingDateObject"));
+    let d2 = JSON.parse(localStorage.getItem("endingDateObject"));
     if (d2 == null) {
         d2 = {
             date: d1.date,
@@ -242,7 +255,7 @@ function bikesobject() {
             manufacturer: "Royal Enfield",
             model: "350 Thunderbird",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Thunderbird-350.jpg",
         },
         {
             name: "Bajaj Pulsar 180",
@@ -252,7 +265,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Pulsar",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Pulsar-180.jpg",
         },
         {
             name: "Bajaj Pulsar NS 160",
@@ -262,7 +275,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Pulsar",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Pulsar-NS-160.jpg",
         },
 
         {
@@ -273,7 +286,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Pulsar",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Pulsar-NS-200.jpg",
         },
         {
             name: "Bajaj Pulsar 135 LS",
@@ -283,7 +296,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Pulsar",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Pulsar-135-LS.jpg",
         },
 
         {
@@ -294,7 +307,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "CT 100",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/CT100.jpg",
         },
         {
             name: "Bajaj Dominar 400 ABS",
@@ -304,7 +317,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Dominar 400 ABS",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Dominar-400.jpg",
         },
         {
             name: "KTM Duke 250",
@@ -314,7 +327,7 @@ function bikesobject() {
             manufacturer: "KTM",
             model: "Duke 250",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Duke-250.jpg",
         },
         {
             name: "Yamaha FZ",
@@ -324,7 +337,7 @@ function bikesobject() {
             manufacturer: "Yamaha",
             model: "FZ",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/FZ-v2.jpg'",
         },
         {
             name: "Honda Navi",
@@ -334,7 +347,7 @@ function bikesobject() {
             manufacturer: "Honda",
             model: "Navi",
             type: "Scooter",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Navi.jpg",
         },
         {
             name: "Honda DREAM NEO",
@@ -344,7 +357,7 @@ function bikesobject() {
             manufacturer: "Honda",
             model: "Dream Neo",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Dream-Neo.jpg",
         },
         {
             name: "Honda Hornet",
@@ -354,7 +367,7 @@ function bikesobject() {
             manufacturer: "Honda",
             model: "Hornet",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Hornet.jpg",
         },
         {
             name: "Honda Activa",
@@ -364,7 +377,7 @@ function bikesobject() {
             manufacturer: "Honda",
             model: "Activa",
             type: "Scooter",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Activa.jpg",
         },
         {
             name: "Honda Dio",
@@ -374,7 +387,7 @@ function bikesobject() {
             manufacturer: "Honda",
             model: "Dio",
             type: "Scooter",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Dio.jpg",
         },
         {
             name: "Honda Livo",
@@ -384,7 +397,7 @@ function bikesobject() {
             manufacturer: "Honda",
             model: "Livo",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Livo.jpg",
         },
         {
             name: "Bajaj Pulsar 150",
@@ -394,7 +407,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Pulsar",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Pulsar-150.jpg",
         },
         {
             name: "Bajaj Avenger 220 Cruise",
@@ -404,7 +417,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Avenger 220 Cruise",
             type: "Motorcycle",
-            imgLink: ".",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Avenger-220-Cruise.jpg",
         },
         {
             name: "Bajaj Avenger 220 Street",
@@ -414,7 +427,7 @@ function bikesobject() {
             manufacturer: "Bajaj",
             model: "Avenger 220 Street",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Avenger-220-Street.jpg",
         },
         {
             name: "Royal Enfield 350 Classic",
@@ -424,7 +437,7 @@ function bikesobject() {
             manufacturer: "Royal Enfield",
             model: "350 Classic",
             type: "Motorcycle",
-            imgLink: "",
+            imgLink: "https://get.onn.app/wp-content/uploads/2020/05/Classic-350.jpg",
         },
     ];
     localStorage.setItem("bikes", JSON.stringify(arrOfBikes));
@@ -471,11 +484,10 @@ function bikes() {
 }
 bikes();
 
-// function for booknow button
 function fav(e) {
     const currLoggedIn = JSON.parse(localStorage.getItem("currLoggedIn"));
     if (currLoggedIn.length < 1) {
-        showLoginPopup();
+        showLoginSignupPopup();
     } else {
         showSelectPickupOverlay();
         let selectedbike = {
@@ -511,14 +523,13 @@ function showSelectPickupOverlay() {
 
 function pickup() {
     let arr = JSON.parse(localStorage.getItem("rideslocations"));
-    // console.log(arr);
+
     let parent = document.getElementById("expand");
     let currentlocation = document.getElementById("currentlocation").innerText;
     parent.innerHTML = "";
 
     arr.forEach((e) => {
         if (currentlocation == e.city) {
-            console.log(e);
             let parent = document.getElementById("expand");
             let div = document.createElement("div");
             let plocation = document.createElement("p");
@@ -549,29 +560,28 @@ function pickup() {
     });
 }
 
-//function for clicking on location box
 function decidedlocation(e) {
-    let decidedlocation = JSON.parse(localStorage.getItem("bookedbike"));
+    let decidedlocation = JSON.parse(localStorage.getItem("selectedbike"));
     decidedlocation.city = e.city;
     decidedlocation.location = e.location;
     decidedlocation.timing = e.timing;
     decidedlocation.reference = e.reference;
     decidedlocation.address = e.address;
 
-    let finallocation = localStorage.getItem("finale");
+    let finallocation = localStorage.getItem("finalBookedBike");
 
     if (finallocation == null) {
         finallocation = [];
     } else {
-        localStorage.removeItem("finale");
+        localStorage.removeItem("finalBookedBike");
         finallocation = [];
     }
-    finallocation.push(decidedlocation);
-    localStorage.setItem("finale", JSON.stringify(finallocation));
+    finallocation.push(decidedlocation, decidedlocation.address);
+
+    localStorage.setItem("finalBookedBike", JSON.stringify(finallocation));
     window.open("../HTML_FILE/checkout.html", "_parent");
 }
 
-//manufucturer sorting
 function manufacturer() {
     let abc = document.getElementById("vehicle");
     var checkboxes = abc.querySelectorAll("input");
@@ -654,7 +664,6 @@ function manufacturer() {
     }
 }
 
-//vehicle sorting
 function vehicle(id) {
     let model = document.getElementById("model");
     var checkboxes = model.querySelectorAll("input");
@@ -786,7 +795,6 @@ function vehicle(id) {
     }
 }
 
-// model sorting
 function model() {
     let model = document.getElementById("model");
     var checkboxes = model.querySelectorAll("input");
@@ -848,7 +856,6 @@ function model() {
     }
 }
 
-//clearing all sorting
 function clearall() {
     var checkboxes = document.querySelectorAll("input");
 
@@ -857,19 +864,18 @@ function clearall() {
     }
     bikes();
 }
-// showCollapseContentFilter();
 
 function showCollapseContentFilter() {
     document
         .getElementsByClassName("filter-bar")[0]
         .classList.toggle("showFilter");
 }
-// some home page shit
+
 function showMobileNavBar() {
     let navBar = document.getElementsByClassName("mobileNavBar")[0];
     navBar.classList.toggle("active");
 }
-// this is for collapsible content where we can select anything and that value  will appear on collapse_btn
+
 function changeCollapseBtnValue(collapse_btn_type, value) {
     let collapse_btn = document.getElementsByClassName(collapse_btn_type)[0];
     collapse_btn.innerHTML = value;
@@ -881,7 +887,7 @@ function changeCollapseBtnValue(collapse_btn_type, value) {
         document.getElementsByClassName("endDateSelector")[0].style.display =
             "block";
     }
-    localStorage.removeItem("endDateObj");
+    localStorage.removeItem("endingDateObject");
 }
 
 function removePopUp(name) {
@@ -891,7 +897,7 @@ function removePopUp(name) {
         popUpCont.classList.remove("active");
     document.body.style.overflow = "visible";
 }
-// ride now city popup
+
 function showSelectCity() {
     let selectCityCont = document.getElementsByClassName("selectCity-overlay")[0];
     console.log(selectCityCont);
@@ -916,7 +922,6 @@ function changeRideNowCityValue(elem) {
     removePopUp("selectCity-overlay");
 }
 
-// ride now calender popup
 function showCalender(para) {
     let calender = document.querySelector(`.${para} > .calender`);
     let calender_timing = document.querySelector(`.${para} > .calender_timing`);
@@ -926,7 +931,7 @@ function showCalender(para) {
     calender.classList.toggle("hide");
     missionCalender(para);
 }
-// nav bar signup page
+
 function showSignup() {
     let login = document.getElementById("login_form");
     let signup = document.getElementById("signup_form");
@@ -938,13 +943,13 @@ function showSignup() {
     loginHeading.classList.toggle("currForm");
     signupHeading.classList.toggle("currForm");
 }
-// showLoginPopup();
-function showLoginPopup() {
+
+function showLoginSignupPopup() {
     let loginDiv = document.getElementsByClassName("loginPopupOverlay")[0];
     loginDiv.classList.toggle("hide");
     document.body.style.overflow = "hidden";
 }
-// help popup
+
 function showContactPopup() {
     let contactPopup = document.getElementsByClassName(
         "contactUsForm-helpPopup-cont"
@@ -952,16 +957,11 @@ function showContactPopup() {
     contactPopup.classList.toggle("active");
 }
 
-// this is for ride now collase 30 days or etc wala
 function showrideNowCollapse() {
-    localStorage.removeItem("endDateObj");
+    localStorage.removeItem("endingDateObject");
     let btn = document.getElementsByClassName("collapse-btn-rideNow")[0];
     btn.classList.toggle("active");
 }
-
-// signup login function starts form here
-
-// #signupUser();
 
 function signupUser(e) {
     e.preventDefault();
@@ -992,9 +992,7 @@ function signupUser(e) {
         form.password.value = "";
     }
 }
-// #2 validating user input fields
 
-// to validate the form i am adding this addInputEvent function to all Element which has class input-event
 function addInputEvent() {
     const inputs = document.querySelectorAll(".input-event");
     inputs.forEach((input) => {
@@ -1063,8 +1061,6 @@ function validateName(str) {
     return true;
 }
 
-// #3createUserAccount
-// here i am checking if user already exist or not if not than open otp sec
 let otp;
 let newUser;
 
@@ -1096,7 +1092,6 @@ function createUserAccount(first_name, last_name, email, mobile, password) {
     }
 }
 
-// user constructor
 function User(first_name, last_name, email, mobile, password) {
     this.first_name = first_name;
     this.last_name = last_name;
@@ -1128,7 +1123,7 @@ function addToCurrLoggedIn(user) {
     localStorage.setItem("currLoggedIn", JSON.stringify(currLoggedIn));
     loginUser();
 }
-// verifyOTP();
+
 function verifyOTP() {
     let otpInput = document.querySelector(".otpSec > #otp");
     if (otpInput.value == otp) {
@@ -1138,7 +1133,7 @@ function verifyOTP() {
         alert("The OTP you entered appears to be incorrect. Please try again.");
     }
 }
-// keepUserLoggedIn();
+
 function keepUserLoggedIn() {
     let currLoggedIn = localStorage.getItem("currLoggedIn");
     if (currLoggedIn == null) {
@@ -1150,8 +1145,6 @@ function keepUserLoggedIn() {
 }
 keepUserLoggedIn();
 
-// loginUser();
-
 function loginUser() {
     removePopUp("loginPopupOverlay");
     document.getElementsByClassName("welcomeNav")[0].classList.remove("hide");
@@ -1159,7 +1152,7 @@ function loginUser() {
 
     updateMyAccount();
 }
-// logoutUser();
+
 function logoutUser() {
     let arr = [];
     localStorage.setItem("currLoggedIn", JSON.stringify(arr));
@@ -1171,13 +1164,12 @@ function logoutUser() {
 function showWelcomeContent() {
     document.getElementsByClassName("welcomeNav")[0].classList.toggle("active");
 }
-// tempo
+
 function showMyAccount() {
     let accountDiv = document.getElementsByClassName("myAccount")[0];
     accountDiv.classList.remove("hide");
 }
 
-// checkUsers() if exist than login user;
 function checkUsers(e) {
     e.preventDefault();
     let login_form = document.getElementById("login_form");
@@ -1214,7 +1206,6 @@ function updateMyAccount() {
     userNameCont.innerHTML = `${currLoggedIn[0].first_name} ${currLoggedIn[0].last_name}`;
     emailIdCont.innerHTML = currLoggedIn[0].email;
 
-    // your profile sec
     let first_name_yourProfile = document.querySelector(
         ".yourProfileCont #first_name-yourProfile"
     );
@@ -1232,9 +1223,7 @@ function updateMyAccount() {
     email_yourProfile.innerHTML = currLoggedIn[0].email;
     mobile_yourProfile.innerHTML = currLoggedIn[0].mobile;
 }
-///////////////////////login/signup logic ends here
 
-// user profile  logic starts form here
 function enableInputBox(classOfParent) {
     let parentOfInput = document.querySelector(`.${classOfParent}`);
     Array.from(parentOfInput.children).forEach((elem) => {
@@ -1245,8 +1234,6 @@ function enableInputBox(classOfParent) {
     });
 }
 
-// changeRightOfAccount();
-// user profile options toggle function
 function changeRightOfAccount(show, hide, activeBtn, deactiveBtn) {
     show = document.getElementsByClassName(show)[0];
     hide = document.getElementsByClassName(hide)[0];
@@ -1261,7 +1248,7 @@ function changeRightOfAccount(show, hide, activeBtn, deactiveBtn) {
         deactiveBtn.classList.remove("active");
     }
 }
-////////////////////////////////////////// calender logic starts form here
+
 let date1 = new Date();
 let date2 = new Date();
 
@@ -1450,49 +1437,55 @@ function addDateToLocalStorage(para, i, date) {
         weekDay: weekDays[date.getDay()],
     };
     if (para == "startDateSelector") {
-        localStorage.setItem("startDateObj", JSON.stringify(obj));
+        localStorage.setItem("startingDateObject", JSON.stringify(obj));
     } else {
-        localStorage.setItem("endDateObj", JSON.stringify(obj));
+        localStorage.setItem("endingDateObject", JSON.stringify(obj));
     }
 }
 
 function addTimeToLocalSto(para, time) {
     if (para == "startDateSelector") {
-        let startDateObj = JSON.parse(localStorage.getItem("startDateObj"));
-        startDateObj["time"] = time;
-        localStorage.setItem("startDateObj", JSON.stringify(startDateObj));
+        let startingDateObject = JSON.parse(
+            localStorage.getItem("startingDateObject")
+        );
+        startingDateObject["time"] = time;
+        localStorage.setItem(
+            "startingDateObject",
+            JSON.stringify(startingDateObject)
+        );
     } else {
-        let endDateObj = JSON.parse(localStorage.getItem("endDateObj"));
-        endDateObj["time"] = time;
-        localStorage.setItem("endDateObj", JSON.stringify(endDateObj));
+        let endingDateObject = JSON.parse(localStorage.getItem("endingDateObject"));
+        endingDateObject["time"] = time;
+        localStorage.setItem("endingDateObject", JSON.stringify(endingDateObject));
     }
 }
-// this function is for get the obj and show on dom ride now sec
+
 function showRideNowDateAndTime(para) {
     if (para == "startDateSelector") {
-        let startDateObj = JSON.parse(localStorage.getItem("startDateObj"));
+        let startingDateObject = JSON.parse(
+            localStorage.getItem("startingDateObject")
+        );
         let spanTag = document.querySelector(`.${para} .calenderStartDate`);
-        // console.log(spanTag);
-        spanTag.innerHTML = `<strong class="calenderStartDate-date">${startDateObj.date}</strong>
-                            <span class="calenderStartDate-weekDay">${startDateObj.weekDay}</span>
-                            <span class="calenderStartDate-month">${startDateObj.month} ${startDateObj.year}</span>
-                            <span class="calenderStartDate-time">${startDateObj.time}</span>`;
+
+        spanTag.innerHTML = `<strong class="calenderStartDate-date">${startingDateObject.date}</strong>
+                            <span class="calenderStartDate-weekDay">${startingDateObject.weekDay}</span>
+                            <span class="calenderStartDate-month">${startingDateObject.month} ${startingDateObject.year}</span>
+                            <span class="calenderStartDate-time">${startingDateObject.time}</span>`;
         let startDateSpan = document.querySelector(".startDateSpan");
         startDateSpan.classList.add("hide");
         if (spanTag.classList.contains("hide")) spanTag.classList.remove("hide");
     } else {
-        let endDateObj = JSON.parse(localStorage.getItem("endDateObj"));
+        let endingDateObject = JSON.parse(localStorage.getItem("endingDateObject"));
         let spanTag = document.querySelector(`.${para} .calenderEndDate`);
-        spanTag.innerHTML = `<strong class="calenderEndDate-date">${endDateObj.date}</strong>
-                            <span class="calenderEndDate-weekDay">${endDateObj.weekDay}</span>
-                            <span class="calenderEndDate-month">${endDateObj.month} ${endDateObj.year}</span>
-                            <span class="calenderEndDate-time">${endDateObj.time}</span>`;
+        spanTag.innerHTML = `<strong class="calenderEndDate-date">${endingDateObject.date}</strong>
+                            <span class="calenderEndDate-weekDay">${endingDateObject.weekDay}</span>
+                            <span class="calenderEndDate-month">${endingDateObject.month} ${endingDateObject.year}</span>
+                            <span class="calenderEndDate-time">${endingDateObject.time}</span>`;
         let endDateSpan = document.querySelector(".endDateSpan");
         endDateSpan.classList.add("hide");
         if (spanTag.classList.contains("hide")) spanTag.classList.remove("hide");
     }
 }
-// now data is going on ride now page
 
 function checkStartAndEndDateCont() {
     dayrating();
@@ -1517,22 +1510,22 @@ function checkStartAndEndDateCont() {
     ) {
         alert("Please fill end date or choose 30 days plan");
     } else {
-        let rideNowOtherInfo = {
+        let rideNowDetails = {
             cityName: `${rideNow_city_name.innerHTML}`,
             planName: `${choose_plan}`,
         };
-        localStorage.setItem("rideNowOtherInfo", JSON.stringify(rideNowOtherInfo));
+        localStorage.setItem("rideNowDetails", JSON.stringify(rideNowDetails));
         fetchDataFromHomePage();
     }
 }
 
 function fetchDataFromHomePage() {
-    let rideNowOtherInfo = JSON.parse(localStorage.getItem("rideNowOtherInfo"));
+    let rideNowDetails = JSON.parse(localStorage.getItem("rideNowDetails"));
     let rideNow_city_name = document.querySelector(".rideNow-city-name");
     let planName = document.querySelector(".choose_plan .collapse-btn-rideNow");
-    rideNow_city_name.innerHTML = rideNowOtherInfo.cityName;
-    planName.innerHTML = rideNowOtherInfo.planName;
-    if (rideNowOtherInfo.planName == "30 DAYS BOOKING") {
+    rideNow_city_name.innerHTML = rideNowDetails.cityName;
+    planName.innerHTML = rideNowDetails.planName;
+    if (rideNowDetails.planName == "30 DAYS BOOKING") {
         document.getElementsByClassName("endDateSelector")[0].style.display =
             "none";
     }

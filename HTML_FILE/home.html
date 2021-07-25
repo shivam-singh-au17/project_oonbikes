@@ -45,7 +45,7 @@
                         <a href="#header_div" onclick="showLoginSignupPopup()" class="signupNav">
                 LOGIN/SIGNUP</a
               >
-              <a href="#" onclick="showWelcomeContent()" class="welcomeNav hide"
+              <a href="#" onclick="showWelcomeContent()" class="welcomeNavigation hide"
                 >WELCOME <span class="fa fa-caret-down"></span
               ></a>
                         <div class="welcome-hide_content">
@@ -65,7 +65,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="mobileNavBar">
+                    <div class="mobileNavigation">
                         <ul>
                             <li>
                                 <a href="#move_to_whyOnn">WHY ONN?</a>
@@ -88,7 +88,7 @@
                   <a
                     href="#"
                     onclick="showWelcomeContent()"
-                    class="welcomeNav hide"
+                    class="welcomeNavigation hide"
                     >WELCOME <span class="fa fa-caret-down"></span
                   ></a>
                                 <div class="welcome-hide_content">
@@ -601,7 +601,7 @@
             </div>
         </div>
     </div>
-    <div class="main_contentFaq">
+    <div class="FAQ_mainPage">
         <div class="FAQs_section">
             <h2>Top FAQs</h2>
             <p>Renting a Bike should be Easy, Like our FAQs.</p>
@@ -638,7 +638,7 @@
             <p class="blog_FAQ_link">
                 If you have any more doubts, please visit our
                 <a href="../HTML_FILE/faq1.html">FAQ Section</a> <br /> Our Daily Bike Renting Plan is the most affordable plan in India. Check out our Fleet and Pricing section on top for more detailed information and if you are a bike enthusiast, check
-                out our Blog.
+                out our <a href="../HTML_FILE/BLOGpage.html">BLOG</a>.<br>Announcing our exclusive association with <a href="https://strodebike.com/">StrodeBike - Smart Electric Cycles </a>enabled with ONN Nucleus to provide best riding experience.
             </p>
             <div class="popular_bike_for_rent">
                 <div class="popular_Bike_Heading">
@@ -652,16 +652,16 @@
                     <p>Bajaj CT 100 for rent</p>
                 </div>
                 <div>
-                    <p>Honda Activa for rent</p>
-                    <p>Pulsar 150 for rent</p>
-                    <p>Royal Enfield 350 Classic for rent</p>
-                    <p>Avenger 220 Street for rent</p>
-                    <p>Bajaj CT 100 for rent</p>
+                    <p>Yamaha FZ for rent</p>
+                    <p>Honda Dio for rent</p>
+                    <p>Avenger 220 Cruise for rent</p>
+                    <p>Dominar 400 ABS for rent</p>
+                    <p>Pulsar NS 200 for rent</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- footer html starts from here -->
+
     <footer>
         <div class="footer_upperPart spacing_in_line">
             <div>
@@ -822,9 +822,6 @@
       </p>
     </footer>
 
-    <!-- from here some popup things are adding -->
-
-    <!-- this is for covid safety page popup -->
     <div class="covid_div">
       <div class="covid_div_remove" onclick="removePopUp('covid_div')"></div>
       <img
@@ -847,7 +844,7 @@
       />
     </div>
 
-    <!-- this is choose city popup -->
+
 
     <div class="selectCity-overlay hide">
       <div class="selectCity">
@@ -876,7 +873,7 @@
       </div>
     </div>
 
-    <!-- this is login popup -->
+ 
     <div class="loginPopupOverlay hide">
       <div class="loginPop">
         <div
@@ -952,7 +949,7 @@
                     </div>
                     <div>
                         <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="input-event" />
-                        <!-- <p class="required_field">This field is required</p> -->
+
                         <p class="warning">No space and special character</p>
                     </div>
                 </div>
@@ -1065,7 +1062,55 @@
                         <li>
                             <div class="bike_cont">
                                 <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/Activa.jpg" alt="" srcset="" />
+                                </div>
+                                <div class="bike-details">
+                                    <h4 class="bike_name">Honda</h4>
+                                    <h2 class="bike_model">Activa</h2>
+                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
+                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
+                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
+                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
+                                    <p class="bike-condition">*conditions apply</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bike_cont">
+                                <div class="bike_img_cont">
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/Pulsar-150.jpg" alt="" srcset="" />
+                                </div>
+                                <div class="bike-details">
+                                    <h4 class="bike_name">Bajaj</h4>
+                                    <h2 class="bike_model">Pulsar 150</h2>
+                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
+                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
+                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
+                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
+                                    <p class="bike-condition">*conditions apply</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bike_cont">
+                                <div class="bike_img_cont">
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/Thunderbird-350.jpg" alt="" srcset="" />
+                                </div>
+                                <div class="bike-details">
+                                    <h4 class="bike_name">Royal Enfield</h4>
+                                    <h2 class="bike_model">Thunderbird 350</h2>
+                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
+                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
+                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
+                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
+                                    <p class="bike-condition">*conditions apply</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bike_cont">
+                                <div class="bike_img_cont">
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/Avenger-220-Cruise.jpg" alt="" srcset="" />
                                 </div>
                                 <div class="bike-details">
                                     <h4 class="bike_name">Bajaj</h4>
@@ -1082,7 +1127,7 @@
                         <li>
                             <div class="bike_cont">
                                 <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/Dominar-400.jpg" alt="" srcset="" />
                                 </div>
                                 <div class="bike-details">
                                     <h4 class="bike_name">Bajaj</h4>
@@ -1099,7 +1144,7 @@
                         <li>
                             <div class="bike_cont">
                                 <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/Duke-250.jpg" alt="" srcset="" />
                                 </div>
                                 <div class="bike-details">
                                     <h4 class="bike_name">KTM</h4>
@@ -1116,7 +1161,7 @@
                         <li>
                             <div class="bike_cont">
                                 <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/FZ-v2.jpg" alt="" srcset="" />
                                 </div>
                                 <div class="bike-details">
                                     <h4 class="bike_name">Yamaha</h4>
@@ -1133,7 +1178,7 @@
                         <li>
                             <div class="bike_cont">
                                 <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
+                                    <img src="https://get.onn.app/wp-content/uploads/2020/05/Hornet.jpg" alt="" srcset="" />
                                 </div>
                                 <div class="bike-details">
                                     <h4 class="bike_name">Honda</h4>
@@ -1146,54 +1191,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Honda</h4>
-                                    <h2 class="bike_model">Activa</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Bajaj</h4>
-                                    <h2 class="bike_model">Pulsar 150</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="" alt="" srcset="" />
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Royal Enfield</h4>
-                                    <h2 class="bike_model">Thunderbird 350</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
+
                     </ul>
                     <button onclick="slide(+1)">
             <i class="fas fa-angle-right"></i>
@@ -1261,13 +1259,130 @@
         <div class="paymentDoneOrNotOverlay hide">
             <div class="paymentDoneOrNot">
                 <div class="paymentDoneRemove" onclick="removePopUp('paymentDoneOrNotOverlay')"></div>
-                <div class="paymentResult">
-                    <h1>YOUR BOOKING WAS SUCCESSFUL. PAYMENT DONE.</h1>
-                    <h1 style="color: #1d2d51">
-                        THANK YOU <i class="fas fa-glass-cheers"></i>
-                    </h1>
+                <div class="paymentResult" id="paymentDiv">
+                    <h1 style="color: #1d2d51; margin-top: -8%">BOOKING CONFIRMED.</h1>
+                    <h2 style="color: #1d2d51; margin-top: 0%">
+                        Booking Ref. Number: OR402058
+                    </h2>
+                    <h2 style="float: left; margin-top: -5%; margin-left:-5.4%; padding-right: 9%; background-color: #1d2d51; color: white;">PICKUP</h2>
+                    <div id="checkout-main-cont" style="clear: both;">
+                        <div id="bike-data">
+                            <div id="bike-img">
+                                <p id="company_name"></p>
+                                <p id="model-name"></p>
+                                <div id="bike-pic"></div>
+                                <p id="abc1">PICKUP & RETURN LOCATION</p>
+                                <a id="abc2"></a>
+                            </div>
+
+                            <div id="extra-info">
+                                <div id="extra-info-p">
+                                    <p>Late return first two hours of delay ₹ 200</p>
+                                    <p>₹ 18 per hour after first two hours of delay</p>
+                                </div>
+
+                                <div id="extra-info-extra">
+                                    <p id="tachometer"></p>
+                                    <p>100 km/hour</p>
+                                    <p id="roadSolid"></p>
+                                    <p id="freeKm"></p>
+                                    <p id="coinSolid"></p>
+                                    <p id="excess"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="paisa">
+                            <div id="start-end">
+                                <div id="start">
+                                    <p style="font-weight: bolder">START TRIP</p>
+
+                                    <div>
+                                        <div id="mnth">
+                                            <p id="month_day">27</p>
+                                            <p id="monthYear">JUL 21</p>
+                                        </div>
+
+                                        <div id="weekly">
+                                            <p id="day">Tuesday</p>
+                                            <p id="timehrs">06.00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="end">
+                                    <p style="font-weight: bolder">END TRIP</p>
+
+                                    <div>
+                                        <div id="mnth1">
+                                            <p id="month_day1">28</p>
+                                            <p id="monthYear1">JUL 21</p>
+                                        </div>
+
+                                        <div id="weekly1">
+                                            <p id="day1">Wednesday</p>
+                                            <p id="timehrs1">04.00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="refund-dep">
+                                <div></div>
+                                <div id="alpha">
+                                    <p>Refundable Deposit</p>
+                                    <p>This amount has to be paid at the time of vehicle delivery</p>
+                                </div>
+                                <div>
+                                    <p>₹0</p>
+                                </div>
+                            </div>
+
+                            <div id="bill-space">
+                                <p>PRICING</p>
+                                <div id="jug">
+                                    <p>Tariff (Inclusive of all taxes)</p>
+                                    <p id="price_without_discount">₹ 0</p>
+                                </div>
+
+
+
+
+
+                                <div id="total-pricing">
+                                    <p>Total Amount</p>
+                                    <p id="totalAmounttFinalPrice">₹848</p>
+                                </div>
+
+                                <div id="bhaukal">
+                                    <div>
+                                        <div class="dummy1" id="haebo1">
+                                            <img src="../IMG_FILE/remove.png" alt="rmv" />
+                                        </div>
+
+                                        <p style="margin-left: 0%;  font-size: xx-small !important;">Excludes fuel</p>
+                                    </div>
+
+                                    <div>
+                                        <div class="dummy1" id="haebo">
+                                            <img src="../IMG_FILE/righttick.svg" alt="tick" />
+                                        </div>
+
+                                        <p style="margin-left: -5%;  font-size: xx-small !important;">Includes all taxes</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="tANDc">
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
 </body>
 

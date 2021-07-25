@@ -8,7 +8,6 @@ function navigationChanging() {
     let hamburgerMenu = document.getElementsByClassName("hamburgerMenu")[0];
     hamburgerMenu.classList.toggle("scrollHamburger", window.scrollY > 0);
 
-    ////fleet and pricing overlay
     let fleetAndPricing = document.getElementsByClassName(
         "fleetAndPricingOverlay-cont"
     )[0];
@@ -16,20 +15,20 @@ function navigationChanging() {
 }
 
 function showMobileNavBar() {
-    let navigationBar = document.getElementsByClassName("mobileNavBar")[0];
+    let navigationBar = document.getElementsByClassName("mobileNavigation")[0];
     navigationBar.classList.toggle("active");
 }
-// this is for collapsible content where we can select anything and that value  will appear on collapse_btn
+
 function changeCollapsingBtnValue(collapsing_btn_type, value) {
     let collapse_btn = document.getElementsByClassName(collapsing_btn_type)[0];
     collapse_btn.innerHTML = value;
-    let data = JSON.parse(localStorage.getItem("rideNowOtherInfo"));
-    let rideNowOtherInfo = {
+    let data = JSON.parse(localStorage.getItem("rideNowDetails"));
+    let rideNowDetails = {
         ...data,
         planName: `${value}`,
     };
-    console.log(rideNowOtherInfo);
-    localStorage.setItem("rideNowOtherInfo", JSON.stringify(rideNowOtherInfo));
+    console.log(rideNowDetails);
+    localStorage.setItem("rideNowDetails", JSON.stringify(rideNowDetails));
     collapse_btn.classList.remove("active");
     hideEndDate(value);
 }
@@ -117,11 +116,6 @@ function deletethis() {
     mydiv.innerHTML = null;
 }
 
-// signup login
-// function starts form here
-
-// signupUser();
-
 function signupUser(e) {
     e.preventDefault();
     const form = document.getElementById("signup_form");
@@ -151,9 +145,7 @@ function signupUser(e) {
         form.password.value = "";
     }
 }
-// #2 validating user input fields
 
-// to validate the form i am adding this addInputEvent function to all Element which has class input-event
 function addInputEvent() {
     const inputs = document.querySelectorAll(".input-event");
     inputs.forEach((input) => {
@@ -222,8 +214,6 @@ function validateName(str) {
     return true;
 }
 
-// #3createUserAccount
-// here i am checking if user already exist or not if not than open otp sec
 let otp;
 let newUser;
 
@@ -287,7 +277,7 @@ function addToCurrLoggedIn(user) {
     localStorage.setItem("currLoggedIn", JSON.stringify(currLoggedIn));
     loginUser();
 }
-// verifyOTP();
+
 function verifyOTP() {
     let otpInput = document.querySelector(".otpSec > #otp");
     if (otpInput.value == otp) {
@@ -297,7 +287,7 @@ function verifyOTP() {
         alert("The OTP you entered appears to be incorrect. Please try again.");
     }
 }
-// keepUserLoggedIn();
+
 function keepUserLoggedIn() {
     let currLoggedIn = localStorage.getItem("currLoggedIn");
     if (currLoggedIn == null) {
@@ -311,7 +301,9 @@ keepUserLoggedIn();
 
 function loginUser() {
     removePopUp("loginPopupOverlay");
-    document.getElementsByClassName("welcomeNav")[0].classList.remove("hide");
+    document
+        .getElementsByClassName("welcomeNavigation")[0]
+        .classList.remove("hide");
     document.getElementsByClassName("signupNav")[0].classList.add("hide");
 
     updateMyAccount();
@@ -320,13 +312,17 @@ function loginUser() {
 function logoutUser() {
     let arr = [];
     localStorage.setItem("currLoggedIn", JSON.stringify(arr));
-    document.getElementsByClassName("welcomeNav")[0].classList.add("hide");
-    document.getElementsByClassName("welcomeNav")[0].classList.remove("active");
+    document.getElementsByClassName("welcomeNavigation")[0].classList.add("hide");
+    document
+        .getElementsByClassName("welcomeNavigation")[0]
+        .classList.remove("active");
     document.getElementsByClassName("signupNav")[0].classList.remove("hide");
 }
 
 function showWelcomeContent() {
-    document.getElementsByClassName("welcomeNav")[0].classList.toggle("active");
+    document
+        .getElementsByClassName("welcomeNavigation")[0]
+        .classList.toggle("active");
 }
 
 function showMyAccount() {
@@ -373,7 +369,6 @@ function updateMyAccount() {
     userNameCont.innerHTML = `${currLoggedIn[0].first_name} ${currLoggedIn[0].last_name}`;
     emailIdCont.innerHTML = currLoggedIn[0].email;
 
-    // your profile sec
     let first_name_yourProfile = document.querySelector(
         ".yourProfileCont #first_name-yourProfile"
     );
@@ -391,9 +386,7 @@ function updateMyAccount() {
     email_yourProfile.innerHTML = currLoggedIn[0].email;
     mobile_yourProfile.innerHTML = currLoggedIn[0].mobile;
 }
-///////////////////////login/signup logic ends here
 
-// user profile  logic starts form here
 function enableInputBox(classOfParent) {
     let parentOfInput = document.querySelector(`.${classOfParent}`);
     let updateBtn = document.querySelector(`.${classOfParent} > button`);
@@ -492,8 +485,6 @@ function updateCurrUserProfile(para) {
     localStorage.setItem("users", JSON.stringify(users));
 }
 
-// changeRightOfAccount();
-// user profile options toggle function
 function changeRightOfAccount(show, hide, activeBtn, deactiveBtn) {
     show = document.getElementsByClassName(show)[0];
     hide = document.getElementsByClassName(hide)[0];
@@ -509,7 +500,6 @@ function changeRightOfAccount(show, hide, activeBtn, deactiveBtn) {
     }
 }
 
-// ride now calendar popup
 function calendarVisible(para) {
     let calendar = document.querySelector(`.${para} > .calendar`);
     let calendar_timing = document.querySelector(`.${para} > .calendar_timing`);
@@ -519,7 +509,7 @@ function calendarVisible(para) {
     calendar.classList.toggle("hide");
     missionCalender(para);
 }
-// nav bar signup page
+
 function showSignup() {
     let login = document.getElementById("login_form");
     let signup = document.getElementById("signup_form");
@@ -552,19 +542,18 @@ function collideOthers(ind, elem) {
         }
     }
 }
-// this function is for contact us form select city collapsible content
+
 function showFormCity() {
     let btn = document.getElementsByClassName("hide_btn-form")[0];
     btn.classList.toggle("active");
 }
-// this is for ride now collase 30 days or etc wala
+
 function showrideNowCollapse() {
-    localStorage.removeItem("endDateObj");
+    localStorage.removeItem("endingDateObject");
     let btn = document.getElementsByClassName("hide_btn-rideNow")[0];
     btn.classList.toggle("active");
 }
 
-////for fleet and pricing slide
 const allBikeList = document.querySelectorAll(".bike_cont_list > li");
 let arrOfBikePos = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 let i = 0;
@@ -583,19 +572,18 @@ function slide(step) {
         i--;
         index = i;
     }
-    // index = Math.min(Math.max(index, 0), liEls.length - 1);
+
     allBikeList[index].scrollIntoView({ behavior: "smooth" });
     console.log(index);
 }
 
-// move_to_FleetAndPricing() and for remove also ;
 function move_to_FleetAndPricing() {
     let fleetCont = document.getElementsByClassName(
         "fleetAndPricingOverlay-cont"
     )[0];
     fleetCont.classList.toggle("active");
 }
-// move_to_FleetAndPricingCity(); and city change logic
+
 function move_to_FleetAndPricingCity() {
     let btn = document.getElementsByClassName("hide_btn-fleetNPricing")[0];
     btn.classList.toggle("active");
@@ -658,7 +646,6 @@ function changeFleetAndPricingCity(city) {
     locations.innerHTML = objOfLocations[city];
 }
 
-// This is the calendar logic build to find all the dates and time dynamically
 let date1 = new Date();
 let date2 = new Date();
 
@@ -847,50 +834,55 @@ function addDateToLocalStorage(para, i, date) {
         weekDay: weekDays[date.getDay()],
     };
     if (para == "selectStartDate") {
-        localStorage.setItem("startDateObj", JSON.stringify(obj));
+        localStorage.setItem("startingDateObject", JSON.stringify(obj));
     } else {
-        localStorage.setItem("endDateObj", JSON.stringify(obj));
+        localStorage.setItem("endingDateObject", JSON.stringify(obj));
     }
 }
 
 function addTimeToLocalSto(para, time) {
     if (para == "selectStartDate") {
-        let startDateObj = JSON.parse(localStorage.getItem("startDateObj"));
-        startDateObj["time"] = time;
-        localStorage.setItem("startDateObj", JSON.stringify(startDateObj));
+        let startingDateObject = JSON.parse(
+            localStorage.getItem("startingDateObject")
+        );
+        startingDateObject["time"] = time;
+        localStorage.setItem(
+            "startingDateObject",
+            JSON.stringify(startingDateObject)
+        );
     } else {
-        let endDateObj = JSON.parse(localStorage.getItem("endDateObj"));
-        endDateObj["time"] = time;
-        localStorage.setItem("endDateObj", JSON.stringify(endDateObj));
+        let endingDateObject = JSON.parse(localStorage.getItem("endingDateObject"));
+        endingDateObject["time"] = time;
+        localStorage.setItem("endingDateObject", JSON.stringify(endingDateObject));
     }
 }
-// this function is for get the obj and show on dom ride now sec
+
 function showRideNowDateAndTime(para) {
     if (para == "selectStartDate") {
-        let startDateObj = JSON.parse(localStorage.getItem("startDateObj"));
+        let startingDateObject = JSON.parse(
+            localStorage.getItem("startingDateObject")
+        );
         let spanTag = document.querySelector(`.${para} .calendarStartingDate`);
-        // console.log(spanTag);
-        spanTag.innerHTML = `<strong class="calendarStartingDate-date">${startDateObj.date}</strong>
-                            <span class="calendarStartingDate-weekDay">${startDateObj.weekDay}</span>
-                            <span class="calendarStartingDate-month">${startDateObj.month} ${startDateObj.year}</span>
-                            <span class="calendarStartingDate-time">${startDateObj.time}</span>`;
+
+        spanTag.innerHTML = `<strong class="calendarStartingDate-date">${startingDateObject.date}</strong>
+                            <span class="calendarStartingDate-weekDay">${startingDateObject.weekDay}</span>
+                            <span class="calendarStartingDate-month">${startingDateObject.month} ${startingDateObject.year}</span>
+                            <span class="calendarStartingDate-time">${startingDateObject.time}</span>`;
         let startDateSpan = document.querySelector(".selectStartColumn");
         startDateSpan.classList.add("hide");
         if (spanTag.classList.contains("hide")) spanTag.classList.remove("hide");
     } else {
-        let endDateObj = JSON.parse(localStorage.getItem("endDateObj"));
+        let endingDateObject = JSON.parse(localStorage.getItem("endingDateObject"));
         let spanTag = document.querySelector(`.${para} .calendarEndDate`);
-        spanTag.innerHTML = `<strong class="calendarEndDate-date">${endDateObj.date}</strong>
-                            <span class="calendarEndDate-weekDay">${endDateObj.weekDay}</span>
-                            <span class="calendarEndDate-month">${endDateObj.month} ${endDateObj.year}</span>
-                            <span class="calendarEndDate-time">${endDateObj.time}</span>`;
+        spanTag.innerHTML = `<strong class="calendarEndDate-date">${endingDateObject.date}</strong>
+                            <span class="calendarEndDate-weekDay">${endingDateObject.weekDay}</span>
+                            <span class="calendarEndDate-month">${endingDateObject.month} ${endingDateObject.year}</span>
+                            <span class="calendarEndDate-time">${endingDateObject.time}</span>`;
         let endDateSpan = document.querySelector(".endDateSpan");
         endDateSpan.classList.add("hide");
         if (spanTag.classList.contains("hide")) spanTag.classList.remove("hide");
     }
 }
-
-// The below built logic checks whether start and end date is entered and takes to the next page of ride now.
 
 function checkStartAndEndDateCont() {
     let rideNow_city_name =
@@ -910,16 +902,14 @@ function checkStartAndEndDateCont() {
     ) {
         alert("Please fill end date or choose 30 days plan");
     } else {
-        let rideNowOtherInfo = {
+        let rideNowDetails = {
             cityName: `${rideNow_city_name.innerHTML}`,
             planName: `${choose_plan}`,
         };
-        localStorage.setItem("rideNowOtherInfo", JSON.stringify(rideNowOtherInfo));
+        localStorage.setItem("rideNowDetails", JSON.stringify(rideNowDetails));
         window.location.href = "../HTML_FILE/ride_booking.html";
     }
 }
-
-//Working on the Sorting of Cities. Its incomplete
 
 const arrOfCities = [{
         img: "https://d3bvfezcznypk7.cloudfront.net/staticwebsitecontent/CityImages/bengaluru.png",
@@ -950,9 +940,9 @@ const arrOfCities = [{
         name: "AHMEDABAD",
     },
 ];
-if (localStorage.getItem("rideNowOtherInfo") != null) {
+if (localStorage.getItem("rideNowDetails") != null) {
     let { cityName, planName } = JSON.parse(
-        localStorage.getItem("rideNowOtherInfo")
+        localStorage.getItem("rideNowDetails")
     );
     document.querySelector(".rideNow-city-name").innerHTML = cityName;
     if (planName != undefined) {
@@ -978,21 +968,17 @@ function showRideNowCities() {
          <p>${city.name}</p>
     </div>`;
         cityCont.onclick = function() {
-            let data = JSON.parse(localStorage.getItem("rideNowOtherInfo"));
-            let rideNowOtherInfo = {
+            let data = JSON.parse(localStorage.getItem("rideNowDetails"));
+            let rideNowDetails = {
                 ...data,
                 cityName: `${this.children[0].children[1].innerHTML}`,
             };
-            localStorage.setItem(
-                "rideNowOtherInfo",
-                JSON.stringify(rideNowOtherInfo)
-            );
+            localStorage.setItem("rideNowDetails", JSON.stringify(rideNowDetails));
             changeRideNowCityValue(this);
         };
         cityArea.append(cityCont);
     });
 }
-// When clicked on the select city A pop up opens which contains city image and search Bar.
 
 function showSelectCity() {
     showRideNowCities();
@@ -1031,6 +1017,81 @@ function filterRideNowCities() {
     });
 }
 
+function submitHelpPopup(e) {
+    e.preventDefault();
+    const form = document.getElementById("contactUsForm-helpPopup");
+    let name_popup = form.name_popup.value;
+    let email_popup = form.email_popup.value;
+    let type_popup = form.type_popup.value;
+    let tell_us_more_popup = form.tell_us_more_popup.value;
+    if (name_popup == "") {
+        alert("Please Type your name");
+    } else if (email_popup == "") {
+        alert("Please Type your email");
+    } else if (type_popup == "") {
+        alert("Please select a type");
+    } else if (tell_us_more_popup == "") {
+        alert("Please tell us more");
+    } else {
+        form.name_popup.value = "";
+        form.email_popup.value = "";
+        form.type_popup.value = "";
+        form.tell_us_more_popup.value = "";
+        document.getElementsByClassName("thank_you")[0].classList.toggle("hide");
+    }
+}
+
+function showHelpPopupCollapseContent() {
+    let helpPopup_collapse_cont = document.getElementsByClassName(
+        "helpPopup-collapse-cont"
+    )[0];
+    helpPopup_collapse_cont.classList.toggle("active");
+}
+
+function addEventToHelpPopupCollapse() {
+    let helpPopup_collapse_content = document.querySelectorAll(
+        ".helpPopup-hide_content li"
+    );
+    helpPopup_collapse_content.forEach((li) => {
+        li.addEventListener("click", function() {
+            document.getElementById("type_popup").value = this.innerHTML;
+            showHelpPopupCollapseContent();
+        });
+    });
+}
+addEventToHelpPopupCollapse();
+
+function showSucessOrNot() {
+    let paymentStatus = localStorage.getItem("paymentDone");
+    if (paymentStatus != null && paymentStatus != "NOT YET") {
+        let successOverlay = document.getElementsByClassName(
+            "paymentDoneOrNotOverlay"
+        )[0];
+        successOverlay.classList.remove("hide");
+        localStorage.setItem("paymentDone", "NOT YET");
+        document.body.style.overflow = "hidden";
+    }
+}
+showSucessOrNot();
+
+function showContactPopup() {
+    let contactPopup = document.getElementsByClassName(
+        "contactUsForm-helpPopup-cont"
+    )[0];
+    contactPopup.classList.toggle("active");
+}
+let collapsing_btn = document.querySelectorAll(".hide_btn");
+
+collapsing_btn.forEach(function(btn, ind) {
+    btn.addEventListener("click", function() {
+        let grandFather = this.parentElement.parentElement;
+        if (grandFather.classList.contains("accordian_container")) {
+            collideOthers(ind, grandFather);
+        }
+        this.classList.toggle("active");
+    });
+});
+
 function aboutus() {
     window.location.href = "#";
 }
@@ -1041,3 +1102,29 @@ function showLoginSignupPopup() {
     loginDiv.classList.add("active");
     document.body.style.overflow = "hidden";
 }
+
+function paymentDiv() {
+    var final_data = JSON.parse(localStorage.getItem("finalBookedBike"));
+    console.log(final_data);
+    var companyName = document.getElementById("company_name");
+    companyName.innerHTML = final_data[0].manufacturer;
+
+    var modelName = document.getElementById("model-name");
+    modelName.innerHTML = final_data[0].model;
+
+    var bikePic = document.getElementById("bike-pic");
+    var bikePic1 = document.createElement("img");
+    bikePic1.src = `${final_data[0].imgLink}`;
+    bikePic.appendChild(bikePic1);
+    console.log(final_data[0].imgLink);
+
+    var adresslName = document.getElementById("abc2");
+    adresslName.innerHTML = final_data[0].address;
+
+    var excess = document.getElementById("excess");
+    excess.innerHTML = `Excess ₹ ${final_data[0].excess}/km`;
+
+    var freelKM = document.getElementById("freeKm");
+    freelKM.innerHTML = `${final_data[0].free}Kms free`;
+}
+paymentDiv();

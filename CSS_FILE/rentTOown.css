@@ -223,6 +223,11 @@ h6 {
   cursor: pointer;
 }
 
+.allFiltersbox1 div:hover{
+  background-color: #eb7f23;
+  color: white;
+}
+
 .allFiltersbox2 {
   display: flex;
   max-width: 30%;
@@ -241,6 +246,11 @@ h6 {
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+}
+
+.allFiltersbox2 div:hover{
+  background-color: #eb7f23;
+  color: white;
 }
 
 #filterbikes {
