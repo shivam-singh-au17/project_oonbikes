@@ -1,23 +1,29 @@
 # ONN Bikes Clone
 ### ONN Bikes is a Rent a Bike or Scooty with Most Flexible Daily, Weekly & Monthly Bike Rental Plans @ Most Affordable Price. Free Helmet & Easy Booking.
+
 # Technologies Used
-* [Java Script]()
-* [HTML & CSS]()
+* We used HTML-5 and CSS-3 for front-end
+* Javascript for back-end
+* Localstorage is used for the data-storing purpose (as we are not introduced to the databases till now)
 
 # Tools 
 * VS Code
 * Github
-* Local Storage
 
 # Tools for communication
 * Slack
 * Zoom
 
-
+# Our Agendas - 
+* Breaking the whole work into the smallest divisions according to our strong zone.
+* Setting up the deadline for every individual.
+* Review the code when someone is unable to make the part prominently.
+* Regular commits in GitHub and 2 times stand up so that everyone is updated accordingly.
+* If some flaws are found in the original website, try to solve them as well.
 
 # Steps to browse the project:
 
-#### 1.  Start the app in your VS code with command open with live server.
+#### 1.  Start the app in your VS code with command open with live server & landing page.
 ![Screenshot (1314)](https://github.com/shivam-singh-au17/project_oonbikes/blob/shivam/IMG_FILE/contact/Screenshot%20(1314).png?raw=true)
 
 ![Screenshot (1315)](https://github.com/shivam-singh-au17/project_oonbikes/blob/shivam/IMG_FILE/contact/Screenshot%20(1315).png?raw=true)
@@ -82,11 +88,17 @@
 #### So this was our project we have created with our efforts. We have added the screensots for our audience to understand easily.
 
 # Team members and contributors
+* By following a well-structured way, all of us successfully completed our responsibilities before the given time. The members of team ONNBIKES are-
 ## Hema Shyamala
 #### Github: [HemaShyamala](https://github.com/HemaShyamala)
 ## Nikhil Joshi
 #### Github [NikhilFSWD](https://github.com/NikhilFSWD)
 ## Ananthu Asokkumar
 #### Github [ananthuasokkumar](https://github.com/ananthuasokkumar)
+
+# Conclusion -
+I would like to thank, all of my team members, Hema Shyamala, Nikhil Joshi, and Ananthu Asokkumar for their contribution. The first day, after getting the project, we thought, it was impossible for us, but
+Everything is impossible, until it is done…
+I’m feeling very proud to get such hard-working team members and also feeling very fortunate for being a part of Masai School.
 
 #### ## Thank you for giving it a read....
