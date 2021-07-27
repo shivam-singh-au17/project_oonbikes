@@ -97,8 +97,8 @@
 #### Github [ananthuasokkumar](https://github.com/ananthuasokkumar)
 
 # Conclusion -
-I would like to thank, all of my team members, Hema Shyamala, Nikhil Joshi, and Ananthu Asokkumar for their contribution. The first day, after getting the project, we thought, it was impossible for us, but
-Everything is impossible, until it is done…
-I’m feeling very proud to get such hard-working team members and also feeling very fortunate for being a part of Masai School.
+* I would like to thank, all of my team members, **Hema Shyamala**, **Nikhil Joshi**, and **Ananthu Asokkumar** for their contribution. The first day, after getting the project, we thought, it was impossible for us, but <br>
+* **Everything is impossible, until it is done…** <br>
+* I’m feeling very proud to get such hard-working team members and also feeling very fortunate for being a part of **Masai School**.
 
 #### ## Thank you for giving it a read....
