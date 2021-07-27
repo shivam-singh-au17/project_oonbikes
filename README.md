@@ -2,17 +2,17 @@
 ### ONN Bikes is a Rent a Bike or Scooty with Most Flexible Daily, Weekly & Monthly Bike Rental Plans @ Most Affordable Price. Free Helmet & Easy Booking.
 
 # Technologies Used
-* We used HTML-5 and CSS-3 for front-end
-* Javascript for back-end
+* We used [HTML-5]() and [CSS-3]() for front-end
+* [Javascript]() for back-end
 * Localstorage is used for the data-storing purpose (as we are not introduced to the databases till now)
 
 # Tools 
-* VS Code
-* Github
+* [VS Code]()
+* [Github]()
 
 # Tools for communication
-* Slack
-* Zoom
+* [Slack]()
+* [Zoom]()
 
 # Our Agendas - 
 * Breaking the whole work into the smallest divisions according to our strong zone.
@@ -97,13 +97,11 @@
 #### Github [ananthuasokkumar](https://github.com/ananthuasokkumar)
 
 # Challenges -
-<br>
-**1.** Communication
-Distance always matters for group work. As we are from different parts of India, miscommunications were the common challenges for us. But, we make it happen with the help of **slack** and **WhatsApp**.
-<br>
-**2.** Collaboration
+<h5>1. Communication
+Distance always matters for group work. As we are from different parts of India, miscommunications were the common challenges for us. But, we make it happen with the help of slack and WhatsApp.</h5>
+<h5>2. Collaboration
 As we are using Git collaboration, initially we were facing some technical issues, but continuously co-ordinations, make things easier. <br> <br>
-These two challenges improve our abilities to be a good Team Player.
+These two challenges improve our abilities to be a good Team Player.</h5>
 
 
 # Conclusion -
