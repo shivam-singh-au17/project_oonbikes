@@ -96,6 +96,16 @@
 ## Ananthu Asokkumar
 #### Github [ananthuasokkumar](https://github.com/ananthuasokkumar)
 
+# Challenges -
+<br>
+**1.** Communication
+Distance always matters for group work. As we are from different parts of India, miscommunications were the common challenges for us. But, we make it happen with the help of **slack** and **WhatsApp**.
+<br>
+**2.** Collaboration
+As we are using Git collaboration, initially we were facing some technical issues, but continuously co-ordinations, make things easier. <br> <br>
+These two challenges improve our abilities to be a good Team Player.
+
+
 # Conclusion -
 * I would like to thank, all of my team members, **Hema Shyamala**, **Nikhil Joshi**, and **Ananthu Asokkumar** for their contribution. The first day, after getting the project, we thought, it was impossible for us, but <br>
 * **Everything is impossible, until it is done…** <br>
