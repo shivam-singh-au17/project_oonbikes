@@ -6,7 +6,7 @@ let finalprice = JSON.parse(localStorage.getItem("onnbike_price"));
 
 let enddate = JSON.parse(localStorage.getItem("endingDateObject"));
 if (enddate == null) {
-    enddate = JSON.parse(localStorage.getItem("30daysdate"));
+  enddate = JSON.parse(localStorage.getItem("30daysdate"));
 }
 
 // Extracting Manufactirer details from Local Storage
@@ -21,7 +21,7 @@ bikemodel.innerHTML = obj[0].model;
 let changeprice = document.querySelectorAll("#changeprice");
 let n = changeprice.length;
 for (let i = 0; i < n; i++) {
-    changeprice[i].innerHTML = `${finalprice + 19}`;
+  changeprice[i].innerHTML = `${finalprice + 19}`;
 }
 
 // Extracting Start date from Local Storage
@@ -61,17 +61,17 @@ let excess = document.getElementById("excess");
 excess.innerHTML = `${obj[0].excess}`;
 
 function paymentAccept(para) {
-    let upi_address = document.getElementById(para).value;
-    if (validateMail(upi_address)) {
-        localStorage.setItem("paymentDone", "DONE");
-        window.location.href = "../HTML_FILE/home.html";
-    } else {
-        alert("Please give correct upi address");
-    }
+  let upi_address = document.getElementById(para).value;
+  if (validateMail(upi_address)) {
+    localStorage.setItem("paymentDone", "DONE");
+    window.location.href = "./Project Folder/project_oonbikes/home.html";
+  } else {
+    alert("Please give correct upi address");
+  }
 }
 
 //Validatiing UPI string (It should be in like ex: abc@upi[some Alphabets@upi])
 function validateMail(str) {
-    let regex = /[a-zA-Z0-9.\-_]{2,256}@[a-zA-Z]{2,64}/;
-    return regex.test(str);
+  let regex = /[a-zA-Z0-9.\-_]{2,256}@[a-zA-Z]{2,64}/;
+  return regex.test(str);
 }

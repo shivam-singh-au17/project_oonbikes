@@ -32,7 +32,7 @@ function logoutUser() {
     document.getElementsByClassName("signupNav")[0].classList.remove("hide");
 }
 var final_data = JSON.parse(localStorage.getItem("finalBookedBike"));
-console.log(final_data);
+//console.log(final_data);
 var companyName = document.getElementById("company_name");
 companyName.innerHTML = final_data[0].manufacturer;
 
@@ -43,7 +43,7 @@ var bikePic = document.getElementById("bike-pic");
 var bikePic1 = document.createElement("img");
 bikePic1.src = `${final_data[0].imgLink}`;
 bikePic.appendChild(bikePic1);
-console.log(final_data[0].imgLink);
+//console.log(final_data[0].imgLink);
 
 var adresslName = document.getElementById("abc2");
 adresslName.innerHTML = final_data[0].address;
@@ -63,8 +63,8 @@ if (end == null) {
     end = JSON.parse(localStorage.getItem("30daysdate"));
 }
 
-console.log(start);
-console.log(end);
+//console.log(start);
+//console.log(end);
 
 var month_day = document.getElementById("month_day");
 month_day.innerHTML = start.date;
@@ -179,9 +179,9 @@ function test() {
 
         payment_total_color.style.background = "rgb(29,45,81)";
         payment_total_color.style.opacity = "100";
-        payment_total_color.innerHTML = `PAYMENT ${net_money}`;
+        payment_total_color.innerHTML = `PAYMENT ₹${net_money}`;
         totalAmounttFinalPrice.innerHTML = `₹${net_money}`;
-        console.log(net_money);
+        // console.log(net_money);
         payment_total_color.addEventListener("click", paymentPage);
         localStorage.setItem("onnbike_price", net_money);
 
